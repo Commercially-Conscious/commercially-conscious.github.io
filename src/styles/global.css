@@ -160,7 +160,11 @@ a {
   color: var(--color-muted);
   font-size: 1.05rem;
   max-width: 38rem;
-  margin: 0 0 1.25rem;
+  margin: 0 0 0.4rem;
+}
+
+.hero p.lede:last-of-type {
+  margin-bottom: 1.25rem;
 }
 
 .hero-stats {
