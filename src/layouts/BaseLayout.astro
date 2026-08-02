@@ -6,7 +6,7 @@ interface Props {
   description?: string;
 }
 
-const { title, description = 'A weekly, original-summary roundup of financial and economic news.' } = Astro.props;
+const { title, description = 'A weekly roundup of financial and economic news headlines.' } = Astro.props;
 const base = import.meta.env.BASE_URL;
 ---
 
@@ -23,7 +23,7 @@ const base = import.meta.env.BASE_URL;
     <header class="site-header">
       <div class="wrapper">
         <a class="wordmark" href={base}>Commercially Conscious</a>
-        <p class="tagline">A weekly, original-summary roundup of financial and economic news</p>
+        <p class="tagline">A weekly roundup of financial and economic news headlines</p>
         <nav class="site-nav">
           <a href={base}>Home</a>
           <a href={`${base}categories/`}>Categories</a>
@@ -37,9 +37,9 @@ const base = import.meta.env.BASE_URL;
     <footer class="site-footer">
       <div class="wrapper">
         <p>
-          Headlines and links are sourced from the outlets credited on each entry. Summaries are
-          original commentary written for Commercially Conscious, not excerpts of the source
-          articles.
+          Each entry links to the original story on the outlet credited beside it. Headlines and
+          short summaries are drawn from that outlet's own public RSS feed, provided for
+          syndication — this is a curated pointer digest, not a reproduction of full articles.
         </p>
       </div>
     </footer>
