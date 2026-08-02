@@ -433,3 +433,18 @@ main {
   color: var(--color-muted);
   font-style: italic;
 }
+
+/* Pagefind search widget theming */
+.panel {
+  --pf-text: var(--color-text);
+  --pf-text-secondary: var(--color-text);
+  --pf-text-muted: var(--color-muted);
+  --pf-background: var(--color-surface);
+  --pf-border: var(--color-border);
+  --pf-border-focus: var(--color-accent);
+  --pf-hover: var(--color-accent-soft);
+  --pf-mark: var(--color-accent-soft);
+  --pf-font: var(--font-sans);
+  --pf-border-radius: 10px;
+  --pf-outline-focus: var(--color-accent);
+}

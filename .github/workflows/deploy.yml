@@ -33,10 +33,6 @@ jobs:
       - name: Build site
         run: npm run build
 
-      # Reserved for a future Pagefind indexing step:
-      # - name: Index search
-      #   run: npx pagefind --site dist
-
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

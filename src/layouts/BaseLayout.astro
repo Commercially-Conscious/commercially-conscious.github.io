@@ -38,7 +38,7 @@ const base = import.meta.env.BASE_URL;
         </nav>
       </div>
     </header>
-    <main class="wrapper">
+    <main class="wrapper" data-pagefind-body>
       <slot />
     </main>
     <footer class="site-footer">
@@ -56,9 +56,9 @@ const base = import.meta.env.BASE_URL;
           </nav>
         </div>
         <p class="fine-print">
-          Each entry links to the original story on the outlet credited beside it. Headlines and
-          short summaries are drawn from that outlet's own public RSS feed, provided for
-          syndication — this is a curated pointer digest, not a reproduction of full articles.
+          Each entry contains headlines and short summaries and links to the original story on the
+          outlet credited beside it. This is a curated pointer digest, not a reproduction of full
+          articles.
         </p>
       </div>
     </footer>
