@@ -1,0 +1,45 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const digests = await getCollection('digests');
+  return digests.map((digest) => ({
+    params: { slug: digest.id },
+    props: { digest },
+  }));
+}
+
+const { digest } = Astro.props;
+const { Content } = await render(digest);
+
+function formatDate(date: Date) {
+  return date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+---
+
+<BaseLayout title={digest.data.title} description={digest.data.description}>
+  <h1>{digest.data.title}</h1>
+  <p class="meta">
+    {formatDate(digest.data.weekStart)} – {formatDate(digest.data.weekEnd)}
+  </p>
+  <p>{digest.data.description}</p>
+
+  <Content />
+
+  <section>
+    {
+      digest.data.entries.map((entry) => (
+        <article class="entry">
+          <p class="outlet">{entry.outlet}</p>
+          <h3>
+            <a href={entry.url} target="_blank" rel="noopener noreferrer">
+              {entry.headline}
+            </a>
+          </h3>
+          <p class="summary">{entry.summary}</p>
+        </article>
+      ))
+    }
+  </section>
+</BaseLayout>

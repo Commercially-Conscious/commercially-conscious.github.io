@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const digests = await getCollection('digests');
+  const categories = [
+    ...new Set(digests.flatMap((d) => d.data.entries.map((e) => e.category).filter(Boolean))),
+  ] as string[];
+
+  return categories.map((category) => {
+    const entries = digests.flatMap((d) =>
+      d.data.entries
+        .filter((e) => e.category === category)
+        .map((e) => ({ ...e, digestId: d.id, digestTitle: d.data.title })),
+    );
+    return { params: { category }, props: { category, entries } };
+  });
+}
+
+const { category, entries } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title={`Category: ${category}`}>
+  <h1>{category}</h1>
+  {
+    entries.map((entry) => (
+      <article class="entry">
+        <p class="outlet">
+          {entry.outlet} · from <a href={`${base}digests/${entry.digestId}/`}>{entry.digestTitle}</a>
+        </p>
+        <h3>
+          <a href={entry.url} target="_blank" rel="noopener noreferrer">
+            {entry.headline}
+          </a>
+        </h3>
+        <p class="summary">{entry.summary}</p>
+      </article>
+    ))
+  }
+</BaseLayout>

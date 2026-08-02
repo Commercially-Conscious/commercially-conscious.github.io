@@ -1,0 +1,146 @@
+:root {
+  --color-bg: #fbfaf7;
+  --color-text: #1f2320;
+  --color-muted: #5b6560;
+  --color-accent: #1f5c4a;
+  --color-border: #e2e0d8;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+.wrapper {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.75rem 0;
+}
+
+.site-header .wordmark {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+  text-decoration: none;
+  color: var(--color-text);
+  display: inline-block;
+}
+
+.site-header .tagline {
+  margin: 0.25rem 0 0;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+.site-nav {
+  margin-top: 0.9rem;
+  display: flex;
+  gap: 1.25rem;
+  font-size: 0.9rem;
+}
+
+.site-nav a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: var(--color-accent);
+}
+
+main {
+  padding: 2rem 0 3rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 1.5rem 0 2.5rem;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+.digest-card {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.digest-card h2 {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-serif);
+}
+
+.digest-card .meta {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.chip {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  color: var(--color-muted);
+  text-decoration: none;
+  margin: 0 0.35rem 0.35rem 0;
+}
+
+.chip:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.entry {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.entry .outlet {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-muted);
+}
+
+.entry h3 {
+  margin: 0.25rem 0 0.35rem;
+  font-size: 1.05rem;
+}
+
+.entry h3 a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.entry h3 a:hover {
+  color: var(--color-accent);
+}
+
+.entry .summary {
+  margin: 0;
+}

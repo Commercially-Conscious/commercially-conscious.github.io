@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const digests = await getCollection('digests');
+const base = import.meta.env.BASE_URL;
+
+const categories = [
+  ...new Set(digests.flatMap((d) => d.data.entries.map((e) => e.category).filter(Boolean))),
+].sort() as string[];
+---
+
+<BaseLayout title="Categories">
+  <h1>Categories</h1>
+  {categories.length === 0 && <p>No categories yet.</p>}
+  <ul>
+    {
+      categories.map((category) => (
+        <li>
+          <a href={`${base}categories/${category}/`}>{category}</a>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>

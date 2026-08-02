@@ -1,0 +1,47 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'A weekly, original-summary roundup of financial and economic news.' } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <title>{title} · Commercially Conscious</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrapper">
+        <a class="wordmark" href={base}>Commercially Conscious</a>
+        <p class="tagline">A weekly, original-summary roundup of financial and economic news</p>
+        <nav class="site-nav">
+          <a href={base}>Home</a>
+          <a href={`${base}categories/`}>Categories</a>
+          <a href={`${base}search/`}>Search</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrapper">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrapper">
+        <p>
+          Headlines and links are sourced from the outlets credited on each entry. Summaries are
+          original commentary written for Commercially Conscious, not excerpts of the source
+          articles.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
