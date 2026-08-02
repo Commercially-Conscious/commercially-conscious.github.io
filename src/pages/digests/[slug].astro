@@ -19,15 +19,15 @@ function formatDate(date: Date) {
 ---
 
 <BaseLayout title={digest.data.title} description={digest.data.description}>
-  <h1>{digest.data.title}</h1>
-  <p class="meta">
+  <p class="eyebrow">
     {formatDate(digest.data.weekStart)} – {formatDate(digest.data.weekEnd)}
   </p>
-  <p>{digest.data.description}</p>
+  <h1 class="page-title">{digest.data.title}</h1>
+  <p class="page-lede">{digest.data.description}</p>
 
   <Content />
 
-  <section>
+  <div class="entry-panel">
     {
       digest.data.entries.map((entry) => (
         <article class="entry">
@@ -41,5 +41,5 @@ function formatDate(date: Date) {
         </article>
       ))
     }
-  </section>
+  </div>
 </BaseLayout>

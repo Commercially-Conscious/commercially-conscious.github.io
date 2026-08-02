@@ -11,15 +11,16 @@ const categories = [
 ---
 
 <BaseLayout title="Categories">
-  <h1>Categories</h1>
-  {categories.length === 0 && <p>No categories yet.</p>}
-  <ul>
+  <h1 class="page-title">Categories</h1>
+  <p class="page-lede">Browse headlines grouped by topic across every weekly roundup.</p>
+  {categories.length === 0 && <p class="empty-state">No categories yet.</p>}
+  <div class="category-grid">
     {
       categories.map((category) => (
-        <li>
-          <a href={`${base}categories/${category}/`}>{category}</a>
-        </li>
+        <a class="chip" href={`${base}categories/${category}/`}>
+          {category}
+        </a>
       ))
     }
-  </ul>
+  </div>
 </BaseLayout>

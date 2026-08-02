@@ -23,4 +23,15 @@ const digests = defineCollection({
     }),
 });
 
-export const collections = { digests };
+const articles = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/articles' }),
+  schema: z.object({
+    title: z.string(),
+    publishedDate: z.coerce.date(),
+    url: z.string().url(),
+    author: z.enum(['Jason Semwayo', 'Ebinizer Kevin Karengera']).optional(),
+    excerpt: z.string().optional(),
+  }),
+});
+
+export const collections = { digests, articles };

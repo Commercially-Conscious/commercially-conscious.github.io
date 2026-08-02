@@ -7,6 +7,8 @@ const digests = (await getCollection('digests')).sort(
 );
 const base = import.meta.env.BASE_URL;
 
+const outletCount = new Set(digests.flatMap((d) => d.data.entries.map((e) => e.outlet))).size;
+
 function formatDate(date: Date) {
   return date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
 }
@@ -17,29 +19,53 @@ function categoriesFor(entries: { category?: string }[]) {
 ---
 
 <BaseLayout title="Home">
+  <section class="hero">
+    <h1>Weekly financial &amp; economic headlines, without the noise.</h1>
+    <p class="lede">
+      Commercially Conscious pulls headlines from credible outlets every week and gives you a
+      short, honest pointer to each story — so staying commercially aware doesn't cost you an
+      hour of reading.
+    </p>
+    <div class="hero-stats">
+      <div class="stat">
+        <strong>{digests.length}</strong>
+        <span>Weekly roundups</span>
+      </div>
+      <div class="stat">
+        <strong>{outletCount}</strong>
+        <span>Outlets tracked</span>
+      </div>
+      <div class="stat">
+        <strong>Weekly</strong>
+        <span>Publishing cadence</span>
+      </div>
+    </div>
+  </section>
+
   {
-    digests.length === 0 && (
-      <p>No digests published yet. The first weekly roundup will appear here once generated.</p>
+    digests.length === 0 ? (
+      <p class="empty-state">No digests published yet. The first weekly roundup will appear here once generated.</p>
+    ) : (
+      <div class="card-list">
+        {digests.map((digest) => (
+          <article class="digest-card">
+            <p class="meta">
+              {formatDate(digest.data.weekStart)} – {formatDate(digest.data.weekEnd)}
+            </p>
+            <h2>
+              <a href={`${base}digests/${digest.id}/`}>{digest.data.title}</a>
+            </h2>
+            <p class="description">{digest.data.description}</p>
+            <div>
+              {categoriesFor(digest.data.entries).map((category) => (
+                <a class="chip" href={`${base}categories/${category}/`}>
+                  {category}
+                </a>
+              ))}
+            </div>
+          </article>
+        ))}
+      </div>
     )
-  }
-  {
-    digests.map((digest) => (
-      <article class="digest-card">
-        <h2>
-          <a href={`${base}digests/${digest.id}/`}>{digest.data.title}</a>
-        </h2>
-        <p class="meta">
-          {formatDate(digest.data.weekStart)} – {formatDate(digest.data.weekEnd)}
-        </p>
-        <p>{digest.data.description}</p>
-        <div>
-          {categoriesFor(digest.data.entries).map((category) => (
-            <a class="chip" href={`${base}categories/${category}/`}>
-              {category}
-            </a>
-          ))}
-        </div>
-      </article>
-    ))
   }
 </BaseLayout>

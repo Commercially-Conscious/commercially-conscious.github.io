@@ -21,12 +21,19 @@ const base = import.meta.env.BASE_URL;
   </head>
   <body>
     <header class="site-header">
-      <div class="wrapper">
-        <a class="wordmark" href={base}>Commercially Conscious</a>
-        <p class="tagline">A weekly roundup of financial and economic news headlines</p>
+      <div class="wrapper header-row">
+        <a class="brand" href={base}>
+          <span class="logo-mark" aria-hidden="true">
+            <span>Commercially</span>
+            <span>Conscious</span>
+          </span>
+          <span class="brand-tagline">Commercially Conscious</span>
+        </a>
         <nav class="site-nav">
-          <a href={base}>Home</a>
+          <a href={base}>Digests</a>
           <a href={`${base}categories/`}>Categories</a>
+          <a href={`${base}articles/`}>Articles</a>
+          <a href={`${base}about/`}>About</a>
           <a href={`${base}search/`}>Search</a>
         </nav>
       </div>
@@ -36,7 +43,19 @@ const base = import.meta.env.BASE_URL;
     </main>
     <footer class="site-footer">
       <div class="wrapper">
-        <p>
+        <div class="footer-row">
+          <span class="logo-mark" aria-hidden="true">
+            <span>Commercially</span>
+            <span>Conscious</span>
+          </span>
+          <nav class="footer-links">
+            <a href={base}>Digests</a>
+            <a href={`${base}categories/`}>Categories</a>
+            <a href={`${base}articles/`}>Articles</a>
+            <a href={`${base}about/`}>About</a>
+          </nav>
+        </div>
+        <p class="fine-print">
           Each entry links to the original story on the outlet credited beside it. Headlines and
           short summaries are drawn from that outlet's own public RSS feed, provided for
           syndication — this is a curated pointer digest, not a reproduction of full articles.
