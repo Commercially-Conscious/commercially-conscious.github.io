@@ -35,10 +35,21 @@ function pickThisWeeksOutlets() {
   return [PINNED_OUTLET, ...shuffled.slice(0, count), ...BEST_EFFORT_OUTLETS];
 }
 
+// Dedicated South African outlets — tried every week, separate from the
+// international rotation above. Every headline from these counts as
+// "south-africa" category regardless of topic.
+const SOUTH_AFRICA_OUTLETS = [
+  { outlet: 'SABC News', feedUrl: 'https://www.sabcnews.com/sabcnews/feed/' },
+  { outlet: 'IOL', feedUrl: 'https://www.iol.co.za/rss' },
+  { outlet: 'The Citizen', feedUrl: 'https://www.citizen.co.za/feed/' },
+];
+const MAX_SOUTH_AFRICA_HEADLINES = 2;
+
 const MAX_PER_OUTLET = 3;
 const FINANCE_KEYWORDS = /econom|market|trade|tariff|inflation|central bank|interest rate|\bgdp\b|stock|currency|bond|imf|world bank|business|financ|recession|budget|deficit|exports?|imports?/i;
 const ACQUISITION_KEYWORDS = /\bacqui(re|res|red|sition|sitions|ring)\b|\bmerg(er|ers|es|ing)\b|\bbuyout\b|\btakeover\b|\bm&a\b/i;
 const ECONOMICS_KEYWORDS = /inflation|\bgdp\b|recession|unemployment|interest rate|central bank|monetary policy|fiscal policy|economic growth|\beconomy\b|econom|\bimf\b|world bank|stimulus|jobs report|labou?r market/i;
+const TARIFF_KEYWORDS = /\btariff|trade war|import duty|import duties|customs duty|anti-dumping|section 301|trade barrier/i;
 
 // Used only when a feed gives no real description, so the summary never
 // just repeats the headline verbatim.
@@ -47,8 +58,26 @@ const CATEGORY_TEASERS = {
   economics: 'An economic development worth tracking.',
   'global-trade': 'A trade and policy story worth watching.',
   'mergers-and-acquisitions': 'A deal worth keeping an eye on.',
+  tariffs: 'A tariff story worth watching.',
+  'south-africa': 'A South African story worth a closer look.',
   default: 'Worth a closer look.',
 };
+
+function buildEntry(outletName, entry, link, category) {
+  const headline = (entry.title || '').replace(/\s+/g, ' ').trim();
+  const raw = (entry.contentSnippet || entry.summary || entry.content || '')
+    .replace(/<[^>]*>/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  const isDuplicateOfHeadline = !raw || raw.toLowerCase() === headline.toLowerCase();
+  const summary = isDuplicateOfHeadline
+    ? CATEGORY_TEASERS[category] || CATEGORY_TEASERS.default
+    : raw.length > 220
+      ? `${raw.slice(0, 217)}...`
+      : raw;
+
+  return { outlet: outletName, headline, summary, url: link, category };
+}
 
 const parser = new Parser();
 const FETCH_TIMEOUT_MS = 15000;
@@ -134,6 +163,7 @@ async function main() {
 
       let matchedCategory = null;
       if (ACQUISITION_KEYWORDS.test(text)) matchedCategory = 'mergers-and-acquisitions';
+      else if (TARIFF_KEYWORDS.test(text)) matchedCategory = 'tariffs';
       else if (ECONOMICS_KEYWORDS.test(text)) matchedCategory = 'economics';
 
       bucket.push({ entry, link, matchedCategory });
@@ -144,34 +174,47 @@ async function main() {
   const entries = [];
   for (const [outletName, { bucket, category }] of byOutlet) {
     const acquisitions = bucket.filter((b) => b.matchedCategory === 'mergers-and-acquisitions');
+    const tariffs = bucket.filter((b) => b.matchedCategory === 'tariffs');
     const economics = bucket.filter((b) => b.matchedCategory === 'economics');
     const others = bucket.filter((b) => !b.matchedCategory);
 
-    const picks = [...acquisitions.slice(0, 1), ...economics.slice(0, 1), ...others].slice(0, MAX_PER_OUTLET);
+    const picks = [...acquisitions.slice(0, 1), ...tariffs.slice(0, 1), ...economics.slice(0, 1), ...others].slice(0, MAX_PER_OUTLET);
 
     for (const { entry, link, matchedCategory } of picks) {
-      const headline = (entry.title || '').replace(/\s+/g, ' ').trim();
-      const finalCategory = matchedCategory || category;
-
-      const raw = (entry.contentSnippet || entry.summary || entry.content || '')
-        .replace(/<[^>]*>/g, '')
-        .replace(/\s+/g, ' ')
-        .trim();
-      const isDuplicateOfHeadline = !raw || raw.toLowerCase() === headline.toLowerCase();
-      const summary = isDuplicateOfHeadline
-        ? CATEGORY_TEASERS[finalCategory] || CATEGORY_TEASERS.default
-        : raw.length > 220
-          ? `${raw.slice(0, 217)}...`
-          : raw;
-
-      entries.push({
-        outlet: outletName,
-        headline,
-        summary,
-        url: link,
-        category: finalCategory,
-      });
+      entries.push(buildEntry(outletName, entry, link, matchedCategory || category));
     }
+  }
+
+  console.log('Fetching South African outlets...');
+  const southAfricaBucket = [];
+  for (const outlet of SOUTH_AFRICA_OUTLETS) {
+    console.log(`Fetching ${outlet.outlet}...`);
+    try {
+      const feed = await fetchFeed(outlet.feedUrl);
+      console.log(`  -> ok, ${feed.items?.length ?? 0} items`);
+      for (const entry of feed.items || []) {
+        const link = entry.link || entry.guid || '';
+        if (!link) continue;
+        if (southAfricaBucket.some((e) => e.link === link)) continue;
+        const text = `${entry.title || ''} ${entry.contentSnippet || entry.summary || entry.content || ''}`;
+        southAfricaBucket.push({ outletName: outlet.outlet, entry, link, isFinance: FINANCE_KEYWORDS.test(text) });
+      }
+    } catch (err) {
+      console.log(`  -> skipped: ${err.message || String(err)}`);
+      skipped.push({ outlet: outlet.outlet, error: err.message || String(err) });
+    }
+  }
+
+  // Prefer finance/business-relevant South African stories, but fall back to
+  // top general headlines so the 1-2 slot is still filled when nothing on
+  // topic is available that week.
+  const southAfricaPicks = [
+    ...southAfricaBucket.filter((b) => b.isFinance),
+    ...southAfricaBucket.filter((b) => !b.isFinance),
+  ].slice(0, MAX_SOUTH_AFRICA_HEADLINES);
+
+  for (const { outletName, entry, link } of southAfricaPicks) {
+    entries.push(buildEntry(outletName, entry, link, 'south-africa'));
   }
 
   console.log(`Fetched ${byOutlet.size}/${outletsThisWeek.length} outlets successfully.`);
