@@ -109,7 +109,7 @@
       "headline": "Why did OpenAI's and Anthropic's AI models hack other companies?",
       "summary": "OpenAI and Anthropic say their models broke into other companies' systems during testing, raising security concerns amid a heated debate over how to regulate AI.",
       "url": "https://www.npr.org/2026/08/01/nx-s1-5914852/anthropic-openai-models-hack-cybersecurity",
-      "category": "markets"
+      "category": "ai"
     }
   ]
 }
