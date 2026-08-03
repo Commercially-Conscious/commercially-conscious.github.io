@@ -2,15 +2,38 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import Parser from 'rss-parser';
 
-const OUTLETS = [
-  { outlet: 'BBC News', feedUrl: 'http://feeds.bbci.co.uk/news/business/rss.xml', category: 'markets', topicFilter: false },
+// BBC is pinned — always included, every week.
+const PINNED_OUTLET = { outlet: 'BBC News', feedUrl: 'http://feeds.bbci.co.uk/news/business/rss.xml', category: 'markets', topicFilter: false };
+
+// Rotation pool of outlets whose articles read free in full (no hard paywall).
+// A random subset is picked each run so the same outlets don't appear every
+// week. (The Economist was deliberately left out of this pool — it's a hard
+// paywall and doesn't fit "read the full story for free".)
+const OUTLET_POOL = [
   { outlet: 'Al Jazeera', feedUrl: 'https://www.aljazeera.com/xml/rss/all.xml', category: 'global-trade', topicFilter: true },
   { outlet: 'Yahoo Finance', feedUrl: 'https://finance.yahoo.com/news/rssindex', category: 'markets', topicFilter: false },
   { outlet: 'Investing.com', feedUrl: 'https://www.investing.com/rss/news.rss', category: 'markets', topicFilter: false },
+  { outlet: 'The Guardian', feedUrl: 'https://www.theguardian.com/uk/business/rss', category: 'markets', topicFilter: false },
+  { outlet: 'Deutsche Welle', feedUrl: 'https://rss.dw.com/rdf/rss-en-bus', category: 'global-trade', topicFilter: false },
+  { outlet: 'MarketWatch', feedUrl: 'https://feeds.content.dowjones.io/public/rss/mw_topstories', category: 'markets', topicFilter: false },
+  { outlet: 'NPR', feedUrl: 'https://feeds.npr.org/1006/rss.xml', category: 'markets', topicFilter: false },
+];
+
+// Best-effort outlets that have historically blocked automated access — kept
+// in rotation in case that ever changes, but never relied on.
+const BEST_EFFORT_OUTLETS = [
   { outlet: 'Reuters', feedUrl: 'https://www.reuters.com/rssFeed/businessNews', category: 'markets', topicFilter: false },
   { outlet: 'News24/Fin24', feedUrl: 'https://feeds.news24.com/articles/fin24/News/rss', category: 'markets', topicFilter: false },
-  { outlet: 'The Economist', feedUrl: 'https://www.economist.com/finance-and-economics/rss.xml', category: 'markets', topicFilter: false },
 ];
+
+const MIN_POOL_OUTLETS = 3;
+const MAX_POOL_OUTLETS = 5;
+
+function pickThisWeeksOutlets() {
+  const shuffled = [...OUTLET_POOL].sort(() => Math.random() - 0.5);
+  const count = MIN_POOL_OUTLETS + Math.floor(Math.random() * (MAX_POOL_OUTLETS - MIN_POOL_OUTLETS + 1));
+  return [PINNED_OUTLET, ...shuffled.slice(0, count), ...BEST_EFFORT_OUTLETS];
+}
 
 const MAX_PER_OUTLET = 3;
 const FINANCE_KEYWORDS = /econom|market|trade|tariff|inflation|central bank|interest rate|\bgdp\b|stock|currency|bond|imf|world bank|business|financ|recession|budget|deficit|exports?|imports?/i;
@@ -72,10 +95,13 @@ async function main() {
   const weekStart = new Date(weekEnd);
   weekStart.setUTCDate(weekEnd.getUTCDate() - 6);
 
+  const outletsThisWeek = pickThisWeeksOutlets();
+  console.log(`This week's outlets: ${outletsThisWeek.map((o) => o.outlet).join(', ')}`);
+
   const byOutlet = new Map();
   const skipped = [];
 
-  for (const outlet of OUTLETS) {
+  for (const outlet of outletsThisWeek) {
     console.log(`Fetching ${outlet.outlet}...`);
     let feed;
     try {
@@ -130,7 +156,7 @@ async function main() {
     }
   }
 
-  console.log(`Fetched ${byOutlet.size}/${OUTLETS.length} outlets successfully.`);
+  console.log(`Fetched ${byOutlet.size}/${outletsThisWeek.length} outlets successfully.`);
   if (skipped.length > 0) {
     console.log('Skipped outlets:');
     for (const s of skipped) console.log(`  - ${s.outlet}: ${s.error}`);

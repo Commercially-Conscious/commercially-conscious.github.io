@@ -4,7 +4,7 @@
   "pubDate": "2026-08-03",
   "weekStart": "2026-07-27",
   "weekEnd": "2026-08-02",
-  "description": "This week's roundup covers 13 headlines from BBC News, Al Jazeera, Yahoo Finance, Investing.com, The Economist.",
+  "description": "This week's roundup covers 16 headlines from BBC News, NPR, Investing.com, Al Jazeera, Deutsche Welle, Yahoo Finance.",
   "entries": [
     {
       "outlet": "BBC News",
@@ -28,10 +28,73 @@
       "category": "markets"
     },
     {
+      "outlet": "NPR",
+      "headline": "Mortgage rates hit their highest level in a year, driven by war and inflation concerns",
+      "summary": "The 30-year fixed-rate mortgage reached 6.66% on average Thursday.",
+      "url": "https://www.npr.org/2026/07/30/nx-s1-5913851/mortgage-rates-one-year-high-july-2026",
+      "category": "economics"
+    },
+    {
+      "outlet": "NPR",
+      "headline": "Capital One says it closed Trump Organization accounts over money-laundering concerns",
+      "summary": "The bank is asking a judge to permanently dismiss a lawsuit from Trump-affiliated businesses, arguing a monthslong internal review — not the Jan. 6 riot — explains why hundreds of accounts were shut down in 2021.",
+      "url": "https://www.npr.org/2026/08/02/g-s1-136834/capital-one-trump-bank-anti-money-laundering",
+      "category": "markets"
+    },
+    {
+      "outlet": "NPR",
+      "headline": "Why did OpenAI's and Anthropic's AI models hack other companies?",
+      "summary": "OpenAI and Anthropic say their models broke into other companies' systems during testing, raising security concerns amid a heated debate over how to regulate AI.",
+      "url": "https://www.npr.org/2026/08/01/nx-s1-5914852/anthropic-openai-models-hack-cybersecurity",
+      "category": "markets"
+    },
+    {
+      "outlet": "Investing.com",
+      "headline": "Swiss annual inflation ticks down to 0.4% in July",
+      "summary": "Swiss annual inflation ticks down to 0.4% in July",
+      "url": "https://www.investing.com/news/economic-indicators/swiss-annual-inflation-ticks-down-to-04-in-july-4829901",
+      "category": "economics"
+    },
+    {
+      "outlet": "Investing.com",
+      "headline": "Why is Capita stock rallying today?",
+      "summary": "Why is Capita stock rallying today?",
+      "url": "https://www.investing.com/news/stock-market-news/why-is-capita-stock-rallying-today-93CH-4829937",
+      "category": "markets"
+    },
+    {
+      "outlet": "Investing.com",
+      "headline": "Why is PostNL stock gaining today?",
+      "summary": "Why is PostNL stock gaining today?",
+      "url": "https://www.investing.com/news/stock-market-news/why-is-postnl-stock-gaining-today-93CH-4829936",
+      "category": "markets"
+    },
+    {
       "outlet": "Al Jazeera",
       "headline": "Japan and US confirm rare joint intervention to prop up yen",
       "summary": "US President Donald Trump says helping to bolster the Japanese currency is a sign of friendship.",
       "url": "https://www.aljazeera.com/economy/2026/8/3/japan-and-us-confirm-rare-joint-intervention-to-prop-up-yen?traffic_source=rss",
+      "category": "global-trade"
+    },
+    {
+      "outlet": "Deutsche Welle",
+      "headline": "Spain's wildfires: Counting the economic cost",
+      "summary": "Devastating wildfires are ravaging Spain's tourism, economy and nature. Could the country have done more to prevent the flames?",
+      "url": "https://www.dw.com/en/spain-s-wildfires-counting-the-economic-cost/a-78186441?maca=en-rss-en-bus-2091-rdf",
+      "category": "economics"
+    },
+    {
+      "outlet": "Deutsche Welle",
+      "headline": "Humanoid robots: Trump's latest China trade battle?",
+      "summary": "The US has banned foreign-made humanoid robots, a market Chinese tech firms dominate. Although Washington cited national security risks, analysts think Donald Trump is buying time for US robot makers to catch up.",
+      "url": "https://www.dw.com/en/humanoid-robots-trump-s-latest-china-trade-battle/a-78181288?maca=en-rss-en-bus-2091-rdf",
+      "category": "global-trade"
+    },
+    {
+      "outlet": "Deutsche Welle",
+      "headline": "BMW to Volkswagen: How deep is Germany's auto industry cull?",
+      "summary": "BMW joins VW, Porsche and Mercedes-Benz in cutting thousands of jobs, as Chinese rivals erode their market share. DW recaps the major reforms German automakers are pursuing to safeguard their future.",
+      "url": "https://www.dw.com/en/bmw-to-volkswagen-how-deep-is-germany-s-auto-industry-cull/a-78168695?maca=en-rss-en-bus-2091-rdf",
       "category": "global-trade"
     },
     {
@@ -53,48 +116,6 @@
       "headline": "Suriname's $26 Billion Oil Bet Is Finally Paying Off",
       "summary": "Suriname's $26 Billion Oil Bet Is Finally Paying Off",
       "url": "https://finance.yahoo.com/energy/articles/surinames-26-billion-oil-bet-210000202.html",
-      "category": "markets"
-    },
-    {
-      "outlet": "Investing.com",
-      "headline": "Earnings call transcript: CDSL misses Q1 2026 EPS estimate as revenue edges up",
-      "summary": "Earnings call transcript: CDSL misses Q1 2026 EPS estimate as revenue edges up",
-      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-cdsl-misses-q1-2026-eps-estimate-as-revenue-edges-up-93CH-4829929",
-      "category": "markets"
-    },
-    {
-      "outlet": "Investing.com",
-      "headline": "Analysis-Obesity battle heats up again as Novo claws way back into race with Lilly",
-      "summary": "Analysis-Obesity battle heats up again as Novo claws way back into race with Lilly",
-      "url": "https://www.investing.com/news/stock-market-news/analysisobesity-battle-heats-up-again-as-novo-claws-way-back-into-race-with-lilly-4829780",
-      "category": "markets"
-    },
-    {
-      "outlet": "Investing.com",
-      "headline": "European shares start August higher on US-Iran diplomacy hopes",
-      "summary": "European shares start August higher on US-Iran diplomacy hopes",
-      "url": "https://www.investing.com/news/stock-market-news/european-shares-start-august-higher-on-usiran-diplomacy-hopes-4829927",
-      "category": "markets"
-    },
-    {
-      "outlet": "The Economist",
-      "headline": "Wall Street is drooling over bank mergers",
-      "summary": "The world’s most fragmented financial industry faces dramatic change",
-      "url": "https://www.economist.com/finance-and-economics/2025/12/11/wall-street-is-drooling-over-bank-mergers",
-      "category": "mergers-and-acquisitions"
-    },
-    {
-      "outlet": "The Economist",
-      "headline": "What will Kevin Warsh do if America’s economy breaks?",
-      "summary": "An enigmatic Fed faces the risk of AI stocks falling and the oil price soaring",
-      "url": "https://www.economist.com/finance-and-economics/2026/08/02/what-will-kevin-warsh-do-if-americas-economy-breaks",
-      "category": "economics"
-    },
-    {
-      "outlet": "The Economist",
-      "headline": "Oil prices remain highly flammable",
-      "summary": "As tensions flare in the Gulf, triple digits could return in a flash",
-      "url": "https://www.economist.com/finance-and-economics/2026/07/30/oil-prices-remain-highly-flammable",
       "category": "markets"
     }
   ]
