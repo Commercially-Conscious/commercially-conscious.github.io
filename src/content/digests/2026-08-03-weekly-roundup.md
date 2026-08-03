@@ -57,23 +57,23 @@
     },
     {
       "outlet": "Investing.com",
-      "headline": "Jefferies upgrades Parsons stock rating to buy, cuts target to $52",
-      "summary": "Jefferies upgrades Parsons stock rating to buy, cuts target to $52",
-      "url": "https://www.investing.com/news/analyst-ratings/jefferies-upgrades-parsons-stock-rating-to-buy-cuts-target-to-52-93CH-4829919",
+      "headline": "European shares start August higher on US-Iran diplomacy hopes",
+      "summary": "European shares start August higher on US-Iran diplomacy hopes",
+      "url": "https://www.investing.com/news/stock-market-news/european-shares-start-august-higher-on-usiran-diplomacy-hopes-4829927",
       "category": "markets"
     },
     {
       "outlet": "Investing.com",
-      "headline": "Jefferies initiates Fresnillo stock coverage with Hold on valuation",
-      "summary": "Jefferies initiates Fresnillo stock coverage with Hold on valuation",
-      "url": "https://www.investing.com/news/analyst-ratings/jefferies-initiates-fresnillo-stock-coverage-with-hold-on-valuation-93CH-4829918",
+      "headline": "Acting US Attorney General Blanche rescinds ’anti-weaponization’ fund before confirmation vote",
+      "summary": "Acting US Attorney General Blanche rescinds ’anti-weaponization’ fund before confirmation vote",
+      "url": "https://www.investing.com/news/politics-news/acting-us-attorney-generalblanche-rescinds-antiweaponization-fund-before-confirmation-vote-4829766",
       "category": "markets"
     },
     {
       "outlet": "Investing.com",
-      "headline": "EasyJet aligns Apollo and Castlelake deadlines as bidding war nears climax",
-      "summary": "EasyJet aligns Apollo and Castlelake deadlines as bidding war nears climax",
-      "url": "https://www.investing.com/news/stock-market-news/easyjet-aligns-apollo-and-castlelake-deadlines-as-bidding-war-nears-climax-4829872",
+      "headline": "Global oil stocks fall as crude extends losses on hopes for Iran diplomatic talks",
+      "summary": "Global oil stocks fall as crude extends losses on hopes for Iran diplomatic talks",
+      "url": "https://www.investing.com/news/stock-market-news/asia-oil-stocks-fall-as-crude-extends-losses-on-hopes-for-iran-diplomatic-talks-4829769",
       "category": "markets"
     },
     {
