@@ -63,13 +63,14 @@ function formatLong(d) {
 
 async function main() {
   const now = new Date();
-  const day = now.getUTCDay();
-  const diffToMonday = day === 0 ? 6 : day - 1;
-  const weekStart = new Date(now);
-  weekStart.setUTCDate(now.getUTCDate() - diffToMonday);
-  weekStart.setUTCHours(0, 0, 0, 0);
-  const weekEnd = new Date(weekStart);
-  weekEnd.setUTCDate(weekStart.getUTCDate() + 6);
+  // Cover the 7 days ending yesterday (the week that just finished), not the
+  // week ahead — this script runs Monday morning, so "yesterday" is Sunday
+  // and weekStart lands on the Monday before that.
+  const weekEnd = new Date(now);
+  weekEnd.setUTCDate(now.getUTCDate() - 1);
+  weekEnd.setUTCHours(0, 0, 0, 0);
+  const weekStart = new Date(weekEnd);
+  weekStart.setUTCDate(weekEnd.getUTCDate() - 6);
 
   const byOutlet = new Map();
   const skipped = [];
