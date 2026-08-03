@@ -50,6 +50,7 @@ const FINANCE_KEYWORDS = /econom|market|trade|tariff|inflation|central bank|inte
 const ACQUISITION_KEYWORDS = /\bacqui(re|res|red|sition|sitions|ring)\b|\bmerg(er|ers|es|ing)\b|\bbuyout\b|\btakeover\b|\bm&a\b/i;
 const ECONOMICS_KEYWORDS = /inflation|\bgdp\b|recession|unemployment|interest rate|central bank|monetary policy|fiscal policy|economic growth|\beconomy\b|econom|\bimf\b|world bank|stimulus|jobs report|labou?r market/i;
 const TARIFF_KEYWORDS = /\btariff|trade war|import duty|import duties|customs duty|anti-dumping|section 301|trade barrier/i;
+const AI_KEYWORDS = /\bai\b|artificial intelligence|machine learning|\bllm\b|large language model|generative ai|chatgpt|neural network|\bopenai\b|\banthropic\b/i;
 
 // Used only when a feed gives no real description, so the summary never
 // just repeats the headline verbatim.
@@ -59,6 +60,7 @@ const CATEGORY_TEASERS = {
   'global-trade': 'A trade and policy story worth watching.',
   'mergers-and-acquisitions': 'A deal worth keeping an eye on.',
   tariffs: 'A tariff story worth watching.',
+  ai: 'An AI story worth watching.',
   'south-africa': 'A South African story worth a closer look.',
   default: 'Worth a closer look.',
 };
@@ -164,6 +166,7 @@ async function main() {
       let matchedCategory = null;
       if (ACQUISITION_KEYWORDS.test(text)) matchedCategory = 'mergers-and-acquisitions';
       else if (TARIFF_KEYWORDS.test(text)) matchedCategory = 'tariffs';
+      else if (AI_KEYWORDS.test(text)) matchedCategory = 'ai';
       else if (ECONOMICS_KEYWORDS.test(text)) matchedCategory = 'economics';
 
       bucket.push({ entry, link, matchedCategory });
@@ -175,10 +178,11 @@ async function main() {
   for (const [outletName, { bucket, category }] of byOutlet) {
     const acquisitions = bucket.filter((b) => b.matchedCategory === 'mergers-and-acquisitions');
     const tariffs = bucket.filter((b) => b.matchedCategory === 'tariffs');
+    const ai = bucket.filter((b) => b.matchedCategory === 'ai');
     const economics = bucket.filter((b) => b.matchedCategory === 'economics');
     const others = bucket.filter((b) => !b.matchedCategory);
 
-    const picks = [...acquisitions.slice(0, 1), ...tariffs.slice(0, 1), ...economics.slice(0, 1), ...others].slice(0, MAX_PER_OUTLET);
+    const picks = [...acquisitions.slice(0, 1), ...tariffs.slice(0, 1), ...ai.slice(0, 1), ...economics.slice(0, 1), ...others].slice(0, MAX_PER_OUTLET);
 
     for (const { entry, link, matchedCategory } of picks) {
       entries.push(buildEntry(outletName, entry, link, matchedCategory || category));
