@@ -40,6 +40,16 @@ const FINANCE_KEYWORDS = /econom|market|trade|tariff|inflation|central bank|inte
 const ACQUISITION_KEYWORDS = /\bacqui(re|res|red|sition|sitions|ring)\b|\bmerg(er|ers|es|ing)\b|\bbuyout\b|\btakeover\b|\bm&a\b/i;
 const ECONOMICS_KEYWORDS = /inflation|\bgdp\b|recession|unemployment|interest rate|central bank|monetary policy|fiscal policy|economic growth|\beconomy\b|econom|\bimf\b|world bank|stimulus|jobs report|labou?r market/i;
 
+// Used only when a feed gives no real description, so the summary never
+// just repeats the headline verbatim.
+const CATEGORY_TEASERS = {
+  markets: 'A markets move worth a closer look.',
+  economics: 'An economic development worth tracking.',
+  'global-trade': 'A trade and policy story worth watching.',
+  'mergers-and-acquisitions': 'A deal worth keeping an eye on.',
+  default: 'Worth a closer look.',
+};
+
 const parser = new Parser();
 const FETCH_TIMEOUT_MS = 15000;
 
@@ -140,18 +150,26 @@ async function main() {
     const picks = [...acquisitions.slice(0, 1), ...economics.slice(0, 1), ...others].slice(0, MAX_PER_OUTLET);
 
     for (const { entry, link, matchedCategory } of picks) {
-      const raw = (entry.contentSnippet || entry.summary || entry.content || entry.title || '')
+      const headline = (entry.title || '').replace(/\s+/g, ' ').trim();
+      const finalCategory = matchedCategory || category;
+
+      const raw = (entry.contentSnippet || entry.summary || entry.content || '')
         .replace(/<[^>]*>/g, '')
         .replace(/\s+/g, ' ')
         .trim();
-      const summary = raw.length > 220 ? `${raw.slice(0, 217)}...` : raw;
+      const isDuplicateOfHeadline = !raw || raw.toLowerCase() === headline.toLowerCase();
+      const summary = isDuplicateOfHeadline
+        ? CATEGORY_TEASERS[finalCategory] || CATEGORY_TEASERS.default
+        : raw.length > 220
+          ? `${raw.slice(0, 217)}...`
+          : raw;
 
       entries.push({
         outlet: outletName,
-        headline: (entry.title || '').replace(/\s+/g, ' ').trim(),
+        headline,
         summary,
         url: link,
-        category: matchedCategory || category,
+        category: finalCategory,
       });
     }
   }
