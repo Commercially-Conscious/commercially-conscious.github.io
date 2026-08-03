@@ -7,10 +7,19 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   publish:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -27,10 +36,30 @@ jobs:
       - name: Build weekly digest
         run: node scripts/publish-weekly-digest.mjs
 
-      - name: Commit and push if a new digest was written
+      - name: Commit new digest if one was written
+        id: commit
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'Weekly roundup: automated digest'
           commit_user_name: Commercially Conscious Bot
           commit_user_email: ebikar19@gmail.com
           file_pattern: 'src/content/digests/*.md'
+
+      # A commit made with the default GITHUB_TOKEN does not trigger other
+      # workflows (GitHub's anti-loop safeguard), so deploy.yml never fires
+      # for this commit. Build and deploy inline instead, only when a new
+      # digest was actually committed.
+      - name: Build site
+        if: steps.commit.outputs.changes_detected == 'true'
+        run: npm run build
+
+      - name: Upload Pages artifact
+        if: steps.commit.outputs.changes_detected == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy to GitHub Pages
+        if: steps.commit.outputs.changes_detected == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4
