@@ -18,15 +18,32 @@ const ACQUISITION_KEYWORDS = /\bacqui(re|res|red|sition|sitions|ring)\b|\bmerg(e
 const ECONOMICS_KEYWORDS = /inflation|\bgdp\b|recession|unemployment|interest rate|central bank|monetary policy|fiscal policy|economic growth|\beconomy\b|econom|\bimf\b|world bank|stimulus|jobs report|labou?r market/i;
 
 const parser = new Parser();
+const FETCH_TIMEOUT_MS = 15000;
 
-async function fetchFeed(feedUrl, attempts = 3) {
+async function fetchWithTimeout(feedUrl) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+  try {
+    const res = await fetch(feedUrl, {
+      signal: controller.signal,
+      headers: { 'user-agent': 'Mozilla/5.0 (compatible; CommerciallyConsciousBot/1.0)' },
+    });
+    if (!res.ok) throw new Error(`Status code ${res.status}`);
+    return await res.text();
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+async function fetchFeed(feedUrl, attempts = 2) {
   let lastError;
   for (let i = 0; i < attempts; i++) {
     try {
-      return await parser.parseURL(feedUrl);
+      const xml = await fetchWithTimeout(feedUrl);
+      return await parser.parseString(xml);
     } catch (err) {
-      lastError = err;
-      if (i < attempts - 1) await new Promise((r) => setTimeout(r, 3000));
+      lastError = err.name === 'AbortError' ? new Error(`Timed out after ${FETCH_TIMEOUT_MS}ms`) : err;
+      if (i < attempts - 1) await new Promise((r) => setTimeout(r, 2000));
     }
   }
   throw lastError;
@@ -58,10 +75,13 @@ async function main() {
   const skipped = [];
 
   for (const outlet of OUTLETS) {
+    console.log(`Fetching ${outlet.outlet}...`);
     let feed;
     try {
       feed = await fetchFeed(outlet.feedUrl);
+      console.log(`  -> ok, ${feed.items?.length ?? 0} items`);
     } catch (err) {
+      console.log(`  -> skipped: ${err.message || String(err)}`);
       skipped.push({ outlet: outlet.outlet, error: err.message || String(err) });
       continue;
     }

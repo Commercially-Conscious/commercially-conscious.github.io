@@ -50,9 +50,9 @@
     },
     {
       "outlet": "Yahoo Finance",
-      "headline": "Suriname's $26 Billion Oil Bet Is Finally Paying Off",
-      "summary": "Suriname's $26 Billion Oil Bet Is Finally Paying Off",
-      "url": "https://finance.yahoo.com/energy/articles/surinames-26-billion-oil-bet-210000202.html",
+      "headline": "AI’s Electricity Demand Is Not the Real Problem. Its Inflexibility Is",
+      "summary": "AI’s Electricity Demand Is Not the Real Problem. Its Inflexibility Is",
+      "url": "https://finance.yahoo.com/energy/articles/ai-electricity-demand-not-real-210000461.html",
       "category": "markets"
     },
     {
