@@ -4,7 +4,7 @@
   "pubDate": "2026-08-03",
   "weekStart": "2026-07-27",
   "weekEnd": "2026-08-02",
-  "description": "This week's roundup covers 15 headlines from BBC News, MarketWatch, Deutsche Welle, The Guardian, NPR.",
+  "description": "This week's roundup covers 12 headlines from BBC News, Deutsche Welle, The Guardian, NPR.",
   "entries": [
     {
       "outlet": "BBC News",
@@ -25,27 +25,6 @@
       "headline": "US and Japan take action to prop up yen in rare joint move",
       "summary": "Both countries have said that they will not hesitate to conduct joint interventions in the future.",
       "url": "https://www.bbc.co.uk/news/articles/cglj1pr0wjwo?at_medium=RSS&at_campaign=rss",
-      "category": "markets"
-    },
-    {
-      "outlet": "MarketWatch",
-      "headline": "We’re in our 60s with $1.5 million. Would a trust be more effective than a will to prevent conflict among our heirs?",
-      "summary": "“I realize that probate can be lengthy, public and expensive.”",
-      "url": "https://www.marketwatch.com/story/we-already-have-wills-were-in-our-60s-with-1-5-million-how-do-we-prevent-family-drama-among-our-heirs-bf7b0eb1?mod=mw_rss_topstories",
-      "category": "markets"
-    },
-    {
-      "outlet": "MarketWatch",
-      "headline": "My girlfriend is 62. Can she claim her late husband’s full Social Security benefit — or does she have to wait?",
-      "summary": "“Her husband passed away 10 years ago. They had been married for more than 20 years.”",
-      "url": "https://www.marketwatch.com/story/my-girlfriend-is-62-can-she-claim-her-late-husbands-full-social-security-benefit-or-does-she-have-to-wait-315c0fa1?mod=mw_rss_topstories",
-      "category": "markets"
-    },
-    {
-      "outlet": "MarketWatch",
-      "headline": "Here’s what’s worth streaming in August 2026 on Netflix, Hulu, HBO Max and more",
-      "summary": "Turn off your brain and enjoy new seasons of Apple’s ‘Ted Lasso,’ Amazon’s ‘Reacher,’ Netflix’s ‘Outer Banks’ and much more",
-      "url": "https://www.marketwatch.com/story/heres-whats-worth-streaming-in-august-2026-on-netflix-hulu-hbo-max-and-more-21b78a08?mod=mw_rss_topstories",
       "category": "markets"
     },
     {

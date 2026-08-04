@@ -15,7 +15,11 @@ const OUTLET_POOL = [
   { outlet: 'Investing.com', feedUrl: 'https://www.investing.com/rss/news.rss', category: 'markets', topicFilter: false },
   { outlet: 'The Guardian', feedUrl: 'https://www.theguardian.com/uk/business/rss', category: 'markets', topicFilter: false },
   { outlet: 'Deutsche Welle', feedUrl: 'https://rss.dw.com/rdf/rss-en-bus', category: 'global-trade', topicFilter: false },
-  { outlet: 'MarketWatch', feedUrl: 'https://feeds.content.dowjones.io/public/rss/mw_topstories', category: 'markets', topicFilter: false },
+  // MarketWatch's "top stories" feed mixes real markets news with personal-
+  // finance advice columns and pure lifestyle content (streaming picks,
+  // reader Q&As) that have no informational value for this site — filtered
+  // to on-topic items only, unlike the other dedicated business/finance feeds.
+  { outlet: 'MarketWatch', feedUrl: 'https://feeds.content.dowjones.io/public/rss/mw_topstories', category: 'markets', topicFilter: true },
   { outlet: 'NPR', feedUrl: 'https://feeds.npr.org/1006/rss.xml', category: 'markets', topicFilter: false },
 ];
 
@@ -51,6 +55,18 @@ const ACQUISITION_KEYWORDS = /\bacqui(re|res|red|sition|sitions|ring)\b|\bmerg(e
 const ECONOMICS_KEYWORDS = /inflation|\bgdp\b|recession|unemployment|interest rate|central bank|monetary policy|fiscal policy|economic growth|\beconomy\b|econom|\bimf\b|world bank|stimulus|jobs report|labou?r market/i;
 const TARIFF_KEYWORDS = /\btariff|trade war|import duty|import duties|customs duty|anti-dumping|section 301|trade barrier/i;
 const AI_KEYWORDS = /\bai\b|artificial intelligence|machine learning|\bllm\b|large language model|generative ai|chatgpt|neural network|\bopenai\b|\banthropic\b/i;
+
+// Personal-finance advice columns ("My girlfriend is 62, can she claim...",
+// "If I buy a house for $1m, will I run out of money by 90?") read as
+// finance-relevant by keyword alone — mentioning money, retirement, etc. —
+// but have no informational value as news. These are near-universally
+// phrased as a first-person question, which real news headlines aren't.
+const PERSONAL_ADVICE_PATTERN = /^(i |i'|my |we're |we are |our |if i |should i |can i |is it |will i |do i |does )/i;
+
+function isPersonalAdviceColumn(headline) {
+  const trimmed = (headline || '').trim().replace(/[‘’]/g, "'");
+  return PERSONAL_ADVICE_PATTERN.test(trimmed) && trimmed.endsWith('?');
+}
 
 // Used only when a feed gives no real description, so the summary never
 // just repeats the headline verbatim.
@@ -158,6 +174,7 @@ async function main() {
     for (const entry of feed.items || []) {
       const text = `${entry.title || ''} ${entry.contentSnippet || entry.summary || entry.content || ''}`;
       if (outlet.topicFilter && !FINANCE_KEYWORDS.test(text)) continue;
+      if (isPersonalAdviceColumn(entry.title)) continue;
 
       const link = entry.link || entry.guid || '';
       if (!link) continue;
@@ -197,6 +214,7 @@ async function main() {
       const feed = await fetchFeed(outlet.feedUrl);
       console.log(`  -> ok, ${feed.items?.length ?? 0} items`);
       for (const entry of feed.items || []) {
+        if (isPersonalAdviceColumn(entry.title)) continue;
         const link = entry.link || entry.guid || '';
         if (!link) continue;
         if (southAfricaBucket.some((e) => e.link === link)) continue;
