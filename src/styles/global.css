@@ -200,6 +200,10 @@ main {
   margin: 2.5rem 0 0.5rem;
 }
 
+.section-title {
+  margin-top: 3.5rem;
+}
+
 .page-lede {
   color: var(--color-muted);
   margin: 0 0 2rem;
