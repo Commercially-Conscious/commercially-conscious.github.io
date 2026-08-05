@@ -5,24 +5,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const articles = (await getCollection('articles')).sort(
   (a, b) => b.data.publishedDate.valueOf() - a.data.publishedDate.valueOf(),
 );
+const base = import.meta.env.BASE_URL;
 
 function formatDate(date: Date) {
   return date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+
+function excerptFor(body: string) {
+  const plain = body
+    .replace(/\[\*\*(.*?)\*\*\]\([^)]*\)/g, '$1')
+    .replace(/[#_*`]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  return plain.length > 200 ? `${plain.slice(0, 197)}...` : plain;
 }
 ---
 
 <BaseLayout title="Articles" description="Articles written by Commercially Conscious over the months.">
   <h1 class="page-title">Articles</h1>
-  <p class="page-lede">
-    Longer pieces written by Jason and Ebinizer over the months, originally published on our
-    LinkedIn page.
-  </p>
+  <p class="page-lede">Longer pieces written by Jason and Ebinizer over the months.</p>
 
   <div class="panel">
-    <p style="margin: 0 0 1rem;">
-      The full archive lives on LinkedIn — browse everything we've written there, or check back
-      here as we add individual pieces to this page.
-    </p>
+    <p style="margin: 0 0 1rem;">You can also find these on our LinkedIn page.</p>
     <a
       class="button"
       href="https://www.linkedin.com/company/commercially-conscious2026/posts/?feedView=all"
@@ -39,10 +43,13 @@ function formatDate(date: Date) {
     ) : (
       <div class="card-list">
         {articles.map((article) => (
-          <a class="digest-card" href={article.url} target="_blank" rel="noopener noreferrer">
-            <p class="meta">{formatDate(article.data.publishedDate)}{article.data.author ? ` · ${article.data.author}` : ''}</p>
+          <a class="digest-card" href={`${base}articles/${article.id}/`}>
+            <p class="meta">
+              {formatDate(article.data.publishedDate)} · {article.data.author}
+              {article.data.issue ? ` · Issue #${article.data.issue}` : ''}
+            </p>
             <h2>{article.data.title}</h2>
-            {article.data.excerpt && <p class="description">{article.data.excerpt}</p>}
+            <p class="description">{excerptFor(article.body ?? '')}</p>
           </a>
         ))}
       </div>

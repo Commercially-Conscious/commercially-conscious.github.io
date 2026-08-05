@@ -25,13 +25,15 @@ const digests = defineCollection({
 
 const articles = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/articles' }),
-  schema: z.object({
-    title: z.string(),
-    publishedDate: z.coerce.date(),
-    url: z.string().url(),
-    author: z.enum(['Jason Semwayo', 'Ebinizer Kevin Karengera']).optional(),
-    excerpt: z.string().optional(),
-  }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      publishedDate: z.coerce.date(),
+      author: z.enum(['Jason Semwayo', 'Ebinizer Kevin Karengera']),
+      issue: z.number().optional(),
+      sources: z.array(z.string().url()).default([]),
+      coverImage: image().optional(),
+    }),
 });
 
 export const collections = { digests, articles };

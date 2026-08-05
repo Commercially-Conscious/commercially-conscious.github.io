@@ -1,0 +1,48 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+  return articles.map((article) => ({
+    params: { slug: article.id },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+const { Content } = await render(article);
+
+function formatDate(date: Date) {
+  return date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+---
+
+<BaseLayout title={article.data.title}>
+  <p class="eyebrow">
+    {formatDate(article.data.publishedDate)} · {article.data.author}
+    {article.data.issue ? ` · Issue #${article.data.issue}` : ''}
+  </p>
+  <h1 class="page-title">{article.data.title}</h1>
+
+  <div class="panel prose">
+    <Content />
+  </div>
+
+  {
+    article.data.sources.length > 0 && (
+      <div class="panel">
+        <h2 class="sources-title">Sources</h2>
+        <ul class="sources-list">
+          {article.data.sources.map((src: string) => (
+            <li>
+              <a href={src} target="_blank" rel="noopener noreferrer">
+                {src}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )
+  }
+</BaseLayout>
