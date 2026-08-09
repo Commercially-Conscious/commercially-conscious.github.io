@@ -56,6 +56,13 @@ const ECONOMICS_KEYWORDS = /inflation|\bgdp\b|recession|unemployment|interest ra
 const TARIFF_KEYWORDS = /\btariff|trade war|import duty|import duties|customs duty|anti-dumping|section 301|trade barrier/i;
 const AI_KEYWORDS = /\bai\b|artificial intelligence|machine learning|\bllm\b|large language model|generative ai|chatgpt|neural network|\bopenai\b|\banthropic\b/i;
 
+// Stricter than FINANCE_KEYWORDS, used only for the general-news South
+// African outlets below. Bare "market" is too loose there — it matched
+// "officially off the market" in a celebrity gossip story — so this
+// requires "market" to be qualified (stock market, job market, etc.) and
+// adds SA-specific economic terms.
+const SOUTH_AFRICA_FINANCE_KEYWORDS = /econom|\b(stock|housing|job|labou?r|financial|money|currency|forex|bond|equity|energy|fuel|petrol|food|property)\s+markets?\b|tariff|inflation|(central|reserve)\s+bank|interest rate|\bgdp\b|\bjse\b|\brand\b|\bimf\b|world bank|\bbusiness\b|financ|recession|budget|deficit|exports?|imports?|unemployment|load.?shedding|\beskom\b|\bsars\b|treasury|\btax(es)?\b/i;
+
 // Personal-finance advice columns ("My girlfriend is 62, can she claim...",
 // "If I buy a house for $1m, will I run out of money by 90?") read as
 // finance-relevant by keyword alone — mentioning money, retirement, etc. —
@@ -219,7 +226,7 @@ async function main() {
         if (!link) continue;
         if (southAfricaBucket.some((e) => e.link === link)) continue;
         const text = `${entry.title || ''} ${entry.contentSnippet || entry.summary || entry.content || ''}`;
-        southAfricaBucket.push({ outletName: outlet.outlet, entry, link, isFinance: FINANCE_KEYWORDS.test(text) });
+        southAfricaBucket.push({ outletName: outlet.outlet, entry, link, isFinance: SOUTH_AFRICA_FINANCE_KEYWORDS.test(text) });
       }
     } catch (err) {
       console.log(`  -> skipped: ${err.message || String(err)}`);
@@ -227,13 +234,14 @@ async function main() {
     }
   }
 
-  // Prefer finance/business-relevant South African stories, but fall back to
-  // top general headlines so the 1-2 slot is still filled when nothing on
-  // topic is available that week.
-  const southAfricaPicks = [
-    ...southAfricaBucket.filter((b) => b.isFinance),
-    ...southAfricaBucket.filter((b) => !b.isFinance),
-  ].slice(0, MAX_SOUTH_AFRICA_HEADLINES);
+  // Only finance/business-relevant South African stories qualify — these
+  // outlets are general news, not finance-scoped, so unlike the main pool
+  // there's no native topic filter. No padding with off-topic stories: some
+  // weeks may have 0 or 1 rather than 2, which beats running a gossip or
+  // sports story just to fill the slot.
+  const southAfricaPicks = southAfricaBucket
+    .filter((b) => b.isFinance && !isPersonalAdviceColumn(b.entry.title))
+    .slice(0, MAX_SOUTH_AFRICA_HEADLINES);
 
   for (const { outletName, entry, link } of southAfricaPicks) {
     entries.push(buildEntry(outletName, entry, link, 'south-africa'));
