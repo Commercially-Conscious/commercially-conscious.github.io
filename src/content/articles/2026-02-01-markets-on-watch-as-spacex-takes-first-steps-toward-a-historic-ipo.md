@@ -2,7 +2,7 @@
 {
   "title": "Markets on watch as SpaceX takes first steps toward a historic IPO",
   "publishedDate": "2026-02-01",
-  "author": "Ebinizer Kevin Karengera",
+  "author": "Ebinezer Kevin Karengera",
   "issue": 2,
   "sources": [
     "https://www.reuters.com/business/aerospace-defense/spacex-lines-up-four-wall-street-banks-potential-ipo-ft-reports-2026-01-22/"

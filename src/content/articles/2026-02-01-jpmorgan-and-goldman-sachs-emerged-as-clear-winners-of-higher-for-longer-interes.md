@@ -2,7 +2,7 @@
 {
   "title": "JPMorgan and Goldman Sachs emerged as clear winners of higher-for-longer interest rates",
   "publishedDate": "2026-02-01",
-  "author": "Ebinizer Kevin Karengera",
+  "author": "Ebinezer Kevin Karengera",
   "issue": 2,
   "sources": [
     "https://markets.financialcontent.com/lightport.lightport1/article/marketminute-2026-1-12-wall-streets-barometer-jpmorgan-and-goldman-sachs-prepare-to-set-the-tone-for-2026-as-earnings-season-begins",

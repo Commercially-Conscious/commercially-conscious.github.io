@@ -2,7 +2,7 @@
 {
   "title": "Nvidia at the Centre of a Capital Spending Boom",
   "publishedDate": "2026-03-01",
-  "author": "Ebinizer Kevin Karengera",
+  "author": "Ebinezer Kevin Karengera",
   "issue": 3,
   "sources": [
     "https://www.aa.com.tr/en/economy/nvidia-tops-earnings-outlook-estimates-as-ai-surge-drives-73-jump-in-revenue/3840708",

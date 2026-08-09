@@ -2,7 +2,7 @@
 {
   "title": "The Capital Lending Power Shift",
   "publishedDate": "2026-03-01",
-  "author": "Ebinizer Kevin Karengera",
+  "author": "Ebinezer Kevin Karengera",
   "issue": 3,
   "sources": [
     "https://www.reuters.com/business/finance/blue-owl-turmoil-adds-strain-2-trillion-us-private-credit-sector-2026-02-27/",

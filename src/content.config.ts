@@ -29,7 +29,7 @@ const articles = defineCollection({
     z.object({
       title: z.string(),
       publishedDate: z.coerce.date(),
-      author: z.enum(['Jason Semwayo', 'Ebinizer Kevin Karengera']),
+      author: z.enum(['Jason Semwayo', 'Ebinezer Kevin Karengera']),
       issue: z.number().optional(),
       sources: z.array(z.string().url()).default([]),
       coverImage: image().optional(),
