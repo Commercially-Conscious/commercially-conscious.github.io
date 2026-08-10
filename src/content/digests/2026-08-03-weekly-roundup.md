@@ -4,7 +4,7 @@
   "pubDate": "2026-08-10",
   "weekStart": "2026-08-03",
   "weekEnd": "2026-08-09",
-  "description": "This week's roundup covers 14 headlines from BBC News, Deutsche Welle, Investing.com, MarketWatch, IOL.",
+  "description": "This week's roundup covers 13 headlines from BBC News, Deutsche Welle, Investing.com, MarketWatch, IOL.",
   "entries": [
     {
       "outlet": "BBC News",
@@ -97,12 +97,6 @@
       "url": "https://iol.co.za/sunday-tribune/opinion/2026-08-10-seventy-years-after-the-womens-march-the-struggle-continues/",
       "category": "south-africa"
     },
-    {
-      "outlet": "IOL",
-      "headline": "August offers a time for reflection and opportunity amidst global changes",
-      "summary": "Discover how the powerful energies of the cosmos can guide your business and personal growth this August.",
-      "url": "https://iol.co.za/thepost/features/2026-08-10-august-offers-a-time-for-reflection-and-opportunity-amidst-global-changes/",
-      "category": "south-africa"
     }
   ]
 }

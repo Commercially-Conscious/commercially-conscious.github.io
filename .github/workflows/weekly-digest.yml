@@ -2,7 +2,14 @@ name: Publish Weekly Digest
 
 on:
   schedule:
-    - cron: '0 7 * * 1'
+    # GitHub explicitly warns that jobs scheduled for the exact top of the
+    # hour (":00") are the most likely to be delayed or dropped, since huge
+    # numbers of repos schedule there too. Runs off-peak at :05 instead, plus
+    # a same-day backup 2 hours later in case the primary run still gets
+    # dropped (harmless if both fire — it just re-publishes with the latest
+    # headlines instead of creating a duplicate).
+    - cron: '5 7 * * 1'
+    - cron: '5 9 * * 1'
   workflow_dispatch:
 
 permissions:

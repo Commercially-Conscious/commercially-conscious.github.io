@@ -63,6 +63,11 @@ const AI_KEYWORDS = /\bai\b|artificial intelligence|machine learning|\bllm\b|lar
 // adds SA-specific economic terms.
 const SOUTH_AFRICA_FINANCE_KEYWORDS = /econom|\b(stock|housing|job|labou?r|financial|money|currency|forex|bond|equity|energy|fuel|petrol|food|property)\s+markets?\b|tariff|inflation|(central|reserve)\s+bank|interest rate|\bgdp\b|\bjse\b|\brand\b|\bimf\b|world bank|\bbusiness\b|financ|recession|budget|deficit|exports?|imports?|unemployment|load.?shedding|\beskom\b|\bsars\b|treasury|\btax(es)?\b/i;
 
+// Lifestyle/horoscope columns sometimes namedrop "business" (e.g. "let the
+// cosmos guide your business this month") to pass a keyword filter. Excluded
+// outright regardless of any other match.
+const ASTROLOGY_KEYWORDS = /horoscope|astrology|\bzodiac\b|\bcosmos\b|astral|\btarot\b|star sign|\bmercury retrograde\b/i;
+
 // Personal-finance advice columns ("My girlfriend is 62, can she claim...",
 // "If I buy a house for $1m, will I run out of money by 90?") read as
 // finance-relevant by keyword alone — mentioning money, retirement, etc. —
@@ -222,10 +227,11 @@ async function main() {
       console.log(`  -> ok, ${feed.items?.length ?? 0} items`);
       for (const entry of feed.items || []) {
         if (isPersonalAdviceColumn(entry.title)) continue;
+        const text = `${entry.title || ''} ${entry.contentSnippet || entry.summary || entry.content || ''}`;
+        if (ASTROLOGY_KEYWORDS.test(text)) continue;
         const link = entry.link || entry.guid || '';
         if (!link) continue;
         if (southAfricaBucket.some((e) => e.link === link)) continue;
-        const text = `${entry.title || ''} ${entry.contentSnippet || entry.summary || entry.content || ''}`;
         southAfricaBucket.push({ outletName: outlet.outlet, entry, link, isFinance: SOUTH_AFRICA_FINANCE_KEYWORDS.test(text) });
       }
     } catch (err) {
