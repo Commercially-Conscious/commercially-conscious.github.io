@@ -96,7 +96,6 @@
       "summary": "Seventy years after the historic 1956 Women's March, South Africa has made significant progress towards gender equality, but women continue to face poverty, unemployment, gender-based violence and unequal economic opp...",
       "url": "https://iol.co.za/sunday-tribune/opinion/2026-08-10-seventy-years-after-the-womens-march-the-struggle-continues/",
       "category": "south-africa"
-    },
     }
   ]
 }
