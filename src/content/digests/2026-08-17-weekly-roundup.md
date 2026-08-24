@@ -4,13 +4,13 @@
   "pubDate": "2026-08-24",
   "weekStart": "2026-08-17",
   "weekEnd": "2026-08-23",
-  "description": "This week's roundup covers 20 headlines from BBC News, Investing.com, Deutsche Welle, MarketWatch, Yahoo Finance, Al Jazeera, SABC News.",
+  "description": "This week's roundup covers 17 headlines from BBC News, Al Jazeera, Yahoo Finance, Deutsche Welle, MarketWatch, SABC News, IOL.",
   "entries": [
     {
       "outlet": "BBC News",
-      "headline": "Trump says Canada wants 'benefits' of being US state after trade talks collapse",
-      "summary": "Canada's PM said he was \"reluctantly\" announcing retaliatory tariffs and accused the US of starting a trade war.",
-      "url": "https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&at_campaign=rss",
+      "headline": "'Half my business will be gone' - Firms in Canada and US fear trade war",
+      "summary": "Business owners in both countries are navigating uncertainty and worry as the tit-for-tat import taxes ratchet up.",
+      "url": "https://www.bbc.co.uk/news/articles/cy0j0zz8l83o?at_medium=RSS&at_campaign=rss",
       "category": "tariffs"
     },
     {
@@ -22,30 +22,51 @@
     },
     {
       "outlet": "BBC News",
-      "headline": "Economic adviser O'Neill rules out government job but backs PM's devolution plans",
-      "summary": "Lord O'Neill, former chief economist at Goldman Sachs, was tipped to become Andy Burnham's chief economic adviser.",
-      "url": "https://www.bbc.co.uk/news/articles/cwym4m4j848o?at_medium=RSS&at_campaign=rss",
+      "headline": "Iran faces 'economic D-Day', US Treasury Secretary warns",
+      "summary": "Scott Bessent says the US will sever all economic ties with the country and that any nation partnering with Iran financially will also be isolated.",
+      "url": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&at_campaign=rss",
       "category": "economics"
     },
     {
-      "outlet": "Investing.com",
-      "headline": "Citizens reiterates Asana stock rating on AI migration efficiency",
+      "outlet": "Al Jazeera",
+      "headline": "Canada-US trade war: Who wins? Who loses?",
+      "summary": "Canada suspends US trade talks as Trump imposes 50% tariffs, with Ottawa vowing dollar-for-dollar retaliation.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/canada-us-trade-war-who-wins-who-loses?traffic_source=rss",
+      "category": "tariffs"
+    },
+    {
+      "outlet": "Al Jazeera",
+      "headline": "US threatens toughest sanctions yet against Iran: What we know",
+      "summary": "Tehran has threatened to retaliate against any country that joins new US economic measures.",
+      "url": "https://www.aljazeera.com/news/2026/8/24/us-threatens-toughest-sanctions-yet-against-iran-what-we-know?traffic_source=rss",
+      "category": "economics"
+    },
+    {
+      "outlet": "Al Jazeera",
+      "headline": "Ukraine’s allies convene in Kyiv as Zelenskyy seeks air defence boost",
+      "summary": "'Coalition of the Willing' leaders to discuss air defence shortage as Ukraine and Russia trade drone attacks.",
+      "url": "https://www.aljazeera.com/news/2026/8/24/ukraines-allies-convene-in-kyiv-as-zelenskyy-seeks-air-defence-boost?traffic_source=rss",
+      "category": "global-trade"
+    },
+    {
+      "outlet": "Yahoo Finance",
+      "headline": "AI scammers are scouring obituaries to target widows — one lost $7,000 after being told her late husband evaded taxes",
       "summary": "An AI story worth watching.",
-      "url": "https://www.investing.com/news/analyst-ratings/citizens-reiterates-asana-stock-rating-on-ai-migration-efficiency-93CH-4872881",
+      "url": "https://finance.yahoo.com/technology/ai/articles/ai-scammers-scouring-obituaries-target-103000752.html",
       "category": "ai"
     },
     {
-      "outlet": "Investing.com",
-      "headline": "Mediator Pakistan to hold talks in Iran on US ’economic D-Day’",
+      "outlet": "Yahoo Finance",
+      "headline": "Best high-yield savings interest rates today, Monday, August 24, 2026: Earn up to 4.15% APY",
       "summary": "An economic development worth tracking.",
-      "url": "https://www.investing.com/news/commodities-news/us-vows-economic-dday-as-iran-threatens-to-halt-all-oil-exports-4872522",
+      "url": "https://finance.yahoo.com/personal-finance/banking/article/best-high-yield-savings-interest-rates-today-monday-august-24-2026-earn-up-to-415-apy-100000361.html",
       "category": "economics"
     },
     {
-      "outlet": "Investing.com",
-      "headline": "DoorDash stock rating maintained at Market Outperform by Citizens",
+      "outlet": "Yahoo Finance",
+      "headline": "91-year-old supermarket chain closes stores, lays off employees",
       "summary": "A markets move worth a closer look.",
-      "url": "https://www.investing.com/news/analyst-ratings/doordash-stock-rating-maintained-at-market-outperform-by-citizens-93CH-4872890",
+      "url": "https://finance.yahoo.com/economy/articles/91-old-supermarket-chain-closes-231700441.html",
       "category": "markets"
     },
     {
@@ -78,59 +99,17 @@
     },
     {
       "outlet": "MarketWatch",
-      "headline": "Alibaba shares tumble as investors question whether AI spending splurge is justified",
-      "summary": "The market’s negative reaction to Alibaba’s announcement of a major share issue illustrates a broader skepticism among global investors about the eventual payback on present AI spending",
-      "url": "https://www.marketwatch.com/story/alibaba-shares-tumble-as-investors-question-whether-ai-spending-splurge-is-justified-6989038b?mod=mw_rss_topstories",
+      "headline": "The post-World War II market shift is here — and bond yields could have higher to go, says Morgan Stanley",
+      "summary": "Morgan Stanley recommends quality stocks with large market capitalizations, adopters of artificial intelligence and the S&P 500.",
+      "url": "https://www.marketwatch.com/story/the-post-world-war-ii-market-shift-is-here-and-bond-yields-could-have-higher-to-go-says-morgan-stanley-9381532c?mod=mw_rss_topstories",
       "category": "ai"
     },
     {
       "outlet": "MarketWatch",
-      "headline": "Samsung Electronics stock had its worst day in three weeks, and the other memory stocks are lower as well",
-      "summary": "Samsung Electronics stock had its worst day in three weeks on Monday as investors reacted to its shareholder return plan, souring the mood for other memory-chip making rivals.",
-      "url": "https://www.marketwatch.com/story/samsung-electronics-stock-had-its-worst-day-in-three-weeks-and-the-other-memory-stocks-are-lower-as-well-2080834f?mod=mw_rss_topstories",
-      "category": "markets"
-    },
-    {
-      "outlet": "Yahoo Finance",
-      "headline": "Bunker Hill signs agreement to acquire all shares of Silver47",
-      "summary": "A deal worth keeping an eye on.",
-      "url": "https://finance.yahoo.com/markets/commodities/articles/bunker-hill-signs-agreement-acquire-090749892.html",
-      "category": "mergers-and-acquisitions"
-    },
-    {
-      "outlet": "Yahoo Finance",
-      "headline": "Dow Jones Futures Waver; Nvidia, Tariffs, Warsh In Focus",
-      "summary": "A tariff story worth watching.",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-rally-nvidia-crowdstrike-warsh/?src=A00220&yptr=yahoo",
-      "category": "tariffs"
-    },
-    {
-      "outlet": "Yahoo Finance",
-      "headline": "Nvidia's Q2 earnings to test resurgent AI trade",
-      "summary": "An AI story worth watching.",
-      "url": "https://finance.yahoo.com/news/nvidias-q2-earnings-to-test-resurgent-ai-trade-112502189.html",
-      "category": "ai"
-    },
-    {
-      "outlet": "Al Jazeera",
-      "headline": "Canada-US trade war: Who wins? Who loses?",
-      "summary": "Canada suspends US trade talks as Trump imposes 50% tariffs, with Ottawa vowing dollar-for-dollar retaliation.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/canada-us-trade-war-who-wins-who-loses?traffic_source=rss",
-      "category": "tariffs"
-    },
-    {
-      "outlet": "Al Jazeera",
-      "headline": "US threat of ‘economic D-Day’ for Iran tests Trump’s China detente",
-      "summary": "Exerting maximum economic pressure on Tehran would risk blowback from Beijing.",
-      "url": "https://www.aljazeera.com/economy/2026/8/24/us-threat-of-economic-d-day-for-iran-tests-trumps-china-detente?traffic_source=rss",
+      "headline": "Here are two trades to make ahead of a critical week for markets as Nvidia results and Jackson Hole loom.",
+      "summary": "There’s a way to play more interest rate angst or an Nvidia inspired tech bounce says Evercore ISI",
+      "url": "https://www.marketwatch.com/story/here-are-two-trades-to-make-ahead-of-a-critical-week-for-markets-as-nvidia-results-and-jackson-hole-loom-8ac3653c?mod=mw_rss_topstories",
       "category": "economics"
-    },
-    {
-      "outlet": "Al Jazeera",
-      "headline": "Ukraine’s allies convene in Kyiv as Zelenskyy seeks air defence boost",
-      "summary": "'Coalition of the Willing' leaders to discuss air defence shortage as Ukraine and Russia trade drone attacks.",
-      "url": "https://www.aljazeera.com/news/2026/8/24/ukraines-allies-convene-in-kyiv-as-zelenskyy-seeks-air-defence-boost?traffic_source=rss",
-      "category": "global-trade"
     },
     {
       "outlet": "SABC News",
@@ -140,10 +119,10 @@
       "category": "south-africa"
     },
     {
-      "outlet": "SABC News",
-      "headline": "India gears up for BRICS Summit amid US-Iran conflict",
-      "summary": "BRICS leaders head to New Delhi as Middle East tensions threaten to overshadow the bloc’s economy.",
-      "url": "https://www.sabcnews.com/sabcnews/india-gears-up-for-brics-summit-amid-us-iran-conflict/",
+      "outlet": "IOL",
+      "headline": "Why Bollywood live tours no longer grace South Africa",
+      "summary": "Discover the reasons behind the decline of electrifying Bollywood live shows in South Africa, as political history, economic pressures, and shifting entertainment paradigms create a cultural chasm that resonates with ...",
+      "url": "https://iol.co.za/thepost/bollywood/2026-08-24-why-bollywood-live-tours-no-longer-grace-south-africa/",
       "category": "south-africa"
     }
   ]
