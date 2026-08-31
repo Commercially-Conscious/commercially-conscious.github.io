@@ -4,7 +4,7 @@
   "pubDate": "2026-08-31",
   "weekStart": "2026-08-24",
   "weekEnd": "2026-08-30",
-  "description": "This week's roundup covers 12 headlines from BBC News, Al Jazeera, Investing.com, NPR, SABC News.",
+  "description": "This week's roundup covers 15 headlines from BBC News, The Guardian, Deutsche Welle, MarketWatch, Yahoo Finance, IOL.",
   "entries": [
     {
       "outlet": "BBC News",
@@ -28,66 +28,87 @@
       "category": "ai"
     },
     {
-      "outlet": "Al Jazeera",
-      "headline": "US plans to sanction another bank to keep economic pressure on Iran",
-      "summary": "Washington has recently stepped up efforts to economically pressure Tehran amid the deadlocked truce talks.",
-      "url": "https://www.aljazeera.com/news/2026/8/31/us-plans-to-sanction-another-bank-to-keep-economic-pressure-on-iran?traffic_source=rss",
-      "category": "economics"
+      "outlet": "The Guardian",
+      "headline": "AA could face £5bn takeover move by German insurer Allianz, reports claim",
+      "summary": "Breakdown recovery group’s private equity owners reportedly in talks with various suitors to sell company The German-based financial services company ⁠Allianz is considering a £5bn takeover swoop for AA, ⁠the breakdow...",
+      "url": "https://www.theguardian.com/business/2026/aug/30/aa-takeover-german-insurer-allianz",
+      "category": "mergers-and-acquisitions"
     },
     {
-      "outlet": "Investing.com",
-      "headline": "SB Energy offered OpenAI $5.5 bln in warrants to secure data-center deal - WSJ",
-      "summary": "An AI story worth watching.",
-      "url": "https://www.investing.com/news/stock-market-news/sb-energy-offered-openai-55-bln-in-warrants-to-secure-datacenter-deal--wsj-4882171",
-      "category": "ai"
-    },
-    {
-      "outlet": "Investing.com",
-      "headline": "Bitcoin falls below $78k as rate jitters, Iran escalation weigh",
-      "summary": "A markets move worth a closer look.",
-      "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-falls-below-78k-as-rate-jitters-iran-escalation-weigh-4882178",
-      "category": "markets"
-    },
-    {
-      "outlet": "Investing.com",
-      "headline": "Australia stocks lower at close of trade; S&P/ASX 200 down 0.18%",
-      "summary": "A markets move worth a closer look.",
-      "url": "https://www.investing.com/news/stock-market-news/australia-stocks-lower-at-close-of-trade-spasx-200-down-018-4882170",
-      "category": "markets"
-    },
-    {
-      "outlet": "NPR",
-      "headline": "How a comic book store got swept into the tariff storm",
-      "summary": "Tariffs continue to rile all kinds of American businesses more than a year after Trump unveiled his first set of tariffs — including a comic book store owner in Ohio.",
-      "url": "https://www.npr.org/2026/08/30/nx-s1-5939521/tariff-refunds-canada-trade-war",
+      "outlet": "The Guardian",
+      "headline": "The Guardian view on rare earths: it’s common sense to secure essential supply chains | Editorial",
+      "summary": "Outsourcing the industry to China cannot continue, but Europe knows it can no longer count on the US for a solution The alarm sounded 16 years ago. In 2010, China blocked exports of key rare earths to Japan in a row o...",
+      "url": "https://www.theguardian.com/commentisfree/2026/aug/30/the-guardian-view-on-rare-earths-its-common-sense-to-secure-essential-supply-chains",
       "category": "tariffs"
     },
     {
-      "outlet": "NPR",
-      "headline": "Fed's Kevin Warsh warns inflation is too high, sparking bets rate hikes are coming",
-      "summary": "Fed Chair Kevin Warsh reiterated his commitment to fighting inflation in a major speech — raising expectations that rate hikes may be coming, though he did not clearly spell out a path going forward.",
-      "url": "https://www.npr.org/2026/08/28/nx-s1-5947903/federal-reserve-inflation-jackson-hole-interest-rates",
+      "outlet": "The Guardian",
+      "headline": "Advanced AI threatens global financial stability, says Bank of England boss",
+      "summary": "Andrew Bailey warns G20 members about risk of cyber-disruption spreading ‘across jurisdictions’ The Bank of England’s governor, Andrew Bailey, has joined the throng of figures warning about the global risks posed by t...",
+      "url": "https://www.theguardian.com/business/2026/aug/31/advanced-frontier-ai-financial-stability-andrew-bailey-g20",
+      "category": "ai"
+    },
+    {
+      "outlet": "Deutsche Welle",
+      "headline": "Why Germany's Volkswagen could cut 100,000 jobs",
+      "summary": "Europe's biggest automaker, Volkswagen, faces Chinese competition, high costs and US tariffs. What could its restructuring mean for the German car industry?",
+      "url": "https://www.dw.com/en/why-germany-s-volkswagen-could-cut-100-000-jobs/a-78483715?maca=en-rss-en-bus-2091-rdf",
+      "category": "tariffs"
+    },
+    {
+      "outlet": "Deutsche Welle",
+      "headline": "Gamescom 2026: What's next for the gaming industry?",
+      "summary": "As Gamescom 2026 opens in Cologne, AI, hardware costs and slowing user growth are putting pressure on the global games industry despite its current strength.",
+      "url": "https://www.dw.com/en/gamescom-2026-what-s-next-for-the-gaming-industry/a-78502849?maca=en-rss-en-bus-2091-rdf",
+      "category": "ai"
+    },
+    {
+      "outlet": "Deutsche Welle",
+      "headline": "Can new US sanctions cripple Iran's shadow economy?",
+      "summary": "The US is expanding sanctions on Iran's financial networks, targeting crypto, gold, aviation and shipping. DW spoke with analysts about what could change.",
+      "url": "https://www.dw.com/en/can-new-us-sanctions-cripple-iran-s-shadow-economy/a-78494630?maca=en-rss-en-bus-2091-rdf",
       "category": "economics"
     },
     {
-      "outlet": "NPR",
-      "headline": "Social media restrictions on young users: What do the kids say?",
-      "summary": "We've heard from adults about the new Facebook and Instagram rules, but what are kids saying? Teenage social media users talk about whether the proposed restrictions will have any effect on them.",
-      "url": "https://www.npr.org/2026/08/28/nx-s1-5947170/social-media-restrictions-on-young-users-what-do-the-kids-say",
+      "outlet": "MarketWatch",
+      "headline": "U.S. stock futures slip as chances of rate hike rise after Warsh’s Jackson Hole comments",
+      "summary": "U.S. stock-index futures declined on Sunday, as investors ponder the likelihood of a fresh interest-rate hike and as new fighting between the U.S. and Iran threatens to reignite the conflict.",
+      "url": "https://www.marketwatch.com/story/u-s-stock-futures-flat-as-chances-of-rate-hike-rise-after-warshs-jackson-hole-comments-1f5287f2?mod=mw_rss_topstories",
       "category": "markets"
     },
     {
-      "outlet": "SABC News",
-      "headline": "Before flood catastrophe, Nepal asked China for early warnings",
-      "summary": "Chinese teams had shared important information with Nepal \"in a timely manner\", it said.",
-      "url": "https://www.sabcnews.com/sabcnews/nepal-asked-china-for-early-warnings-as-risks-mounted/",
+      "outlet": "Yahoo Finance",
+      "headline": "Top EV executive joins the AI boom. Now what?",
+      "summary": "An AI story worth watching.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/top-ev-executive-joins-ai-223300803.html",
+      "category": "ai"
+    },
+    {
+      "outlet": "Yahoo Finance",
+      "headline": "Solar Has Crossed a Critical Economic Tipping Point",
+      "summary": "An economic development worth tracking.",
+      "url": "https://finance.yahoo.com/energy/articles/solar-crossed-critical-economic-tipping-210000010.html",
+      "category": "economics"
+    },
+    {
+      "outlet": "Yahoo Finance",
+      "headline": "Major fruit grower lays off nearly 1,000 workers",
+      "summary": "A markets move worth a closer look.",
+      "url": "https://finance.yahoo.com/small-business/articles/major-fruit-grower-lays-off-010300694.html",
+      "category": "markets"
+    },
+    {
+      "outlet": "IOL",
+      "headline": "Eskom doubles profit to R30.3bn despite falling electricity demand",
+      "summary": "Eskom’s profit after tax more than doubled to R30.3bn in the year to 31 March 2026, helped by improved plant performance, lower diesel use and cost controls. But electricity sales fell 6.2%, while municipal arrears cl...",
+      "url": "https://iol.co.za/business/2026-08-31-eskom-doubles-profit-to-r303bn-despite-falling-electricity-demand/",
       "category": "south-africa"
     },
     {
-      "outlet": "SABC News",
-      "headline": "CPUT Council withdraws 2027 draft financial recovery plan",
-      "summary": "The decision follows student protests this month over the proposed implementation of the plan.",
-      "url": "https://www.sabcnews.com/sabcnews/cput-council-withdraws-2027-draft-financial-recovery-plan/",
+      "outlet": "IOL",
+      "headline": "Why 62.8% of young South Africans cannot find work",
+      "summary": "Nearly two in three young South Africans are unemployed, with economists warning that poor education outcomes and a decades-long skills deficit are limiting job prospects.",
+      "url": "https://iol.co.za/business/jobs/2026-08-31-why-628-of-young-south-africans-cannot-find-work/",
       "category": "south-africa"
     }
   ]
