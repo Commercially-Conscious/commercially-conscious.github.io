@@ -4,7 +4,7 @@
   "pubDate": "2026-09-07",
   "weekStart": "2026-08-31",
   "weekEnd": "2026-09-06",
-  "description": "This week's roundup covers 17 headlines from BBC News, Al Jazeera, The Guardian, Deutsche Welle, Investing.com, IOL.",
+  "description": "This week's roundup covers 18 headlines from BBC News, Al Jazeera, NPR, Yahoo Finance, MarketWatch, Deutsche Welle, IOL.",
   "entries": [
     {
       "outlet": "BBC News",
@@ -37,37 +37,65 @@
     {
       "outlet": "Al Jazeera",
       "headline": "Iran and Ukraine wars: Why ship fuel is running short, and why it matters",
-      "summary": "There's less crude in the market, and refiners prefer to produce diesel. The result: Ships are running short of fuel.",
+      "summary": "There is less crude in the market, and refiners prefer to produce diesel. The result: ships are running short of fuel.",
       "url": "https://www.aljazeera.com/news/2026/9/7/iran-and-ukraine-wars-why-ship-fuel-is-running-short-and-why-it-matters?traffic_source=rss",
       "category": "global-trade"
     },
     {
-      "outlet": "Al Jazeera",
-      "headline": "Six children among 11 people killed in Indonesian market fire",
-      "summary": "A massive fire at a market in the Indonesia village of Babuda has claimed the lives of eleven people.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/aje-onl-nf_11-dead-in-massive-indonesia-market-fire-070926?traffic_source=rss",
-      "category": "global-trade"
-    },
-    {
-      "outlet": "The Guardian",
-      "headline": "UK’s biggest private hospital firm Spire agrees £1bn takeover by hedge fund",
-      "summary": "Toscafund, founded by City figure known as ‘the Rottweiler’, signs deal amid fears over creeping privatisation of NHS Business live – latest updates Britain’s biggest private hospital operator has agreed to a £1bn tak...",
-      "url": "https://www.theguardian.com/business/2026/sep/07/uk-private-hospital-spire-healthcare-takeover-hedge-fund-toscafund-nhs",
-      "category": "mergers-and-acquisitions"
-    },
-    {
-      "outlet": "The Guardian",
-      "headline": "Designers should not fear being replaced by AI, industry leaders say",
-      "summary": "Firms are more likely to use technology as ‘the intern in the office’ than as a replacement for skilled staff Professional designers should not feel “threatened” by the rapid growth of generative AI, according to busi...",
-      "url": "https://www.theguardian.com/uk-news/2026/sep/07/designers-should-not-fear-being-replaced-by-ai-industry-leaders-say",
+      "outlet": "NPR",
+      "headline": "New lawsuits claim OpenAI execs put image ahead of safety in Canadian mass shooting",
+      "summary": "The suits say that recommendations to alert police about the alleged shooter were nixed by OpenAI's global affairs team, led by veteran political strategist Chris Lehane. OpenAI denies the claims.",
+      "url": "https://www.npr.org/2026/09/02/nx-s1-5953021/openai-tumbler-ridge-mass-shooting",
       "category": "ai"
     },
     {
-      "outlet": "The Guardian",
-      "headline": "Bond sell-off pushes up UK mortgage rates; JLR announces 4,000 job cuts as ‘perfect storm’ hits carmaking – business live",
-      "summary": "Rolling coverage of the latest economic and financial news, as JLR plans to cut almost one in 10 workers UK house prices fall for first time in nearly three years, says Lloyds The rise in mortgage rates could cool dem...",
-      "url": "https://www.theguardian.com/business/live/2026/sep/07/uk-house-prices-fall-subdued-market-jlr-job-cuts-shares-oil-latest-news-updates",
+      "outlet": "NPR",
+      "headline": "Chevron to expand in Venezuela, days after the U.S. and Venezuela strike oil deal",
+      "summary": "Chevron is the largest foreign oil operator in Venezuela. The deal will expand its footprint at a time of political and economic uncertainty for Venezuela.",
+      "url": "https://www.npr.org/2026/09/02/nx-s1-5952190/chevron-venezuela-oil-deal",
       "category": "economics"
+    },
+    {
+      "outlet": "NPR",
+      "headline": "Trump issues new executive orders on beef sales to pacify American cattle ranchers",
+      "summary": "President Trump's latest executive orders allows ranchers to sell meat directly to consumers. Ranchers have been upset over Trump's plan to boost beef imports in a bid to lower prices.",
+      "url": "https://www.npr.org/2026/09/06/nx-s1-5959146/trump-issues-new-executive-orders-on-beef-sales-to-pacify-american-cattle-ranchers",
+      "category": "markets"
+    },
+    {
+      "outlet": "Yahoo Finance",
+      "headline": "bk plus acquires chartered accountancy practice Joshua Leigh & Co",
+      "summary": "A deal worth keeping an eye on.",
+      "url": "https://finance.yahoo.com/small-business/articles/bk-plus-acquires-chartered-accountancy-142840788.html",
+      "category": "mergers-and-acquisitions"
+    },
+    {
+      "outlet": "Yahoo Finance",
+      "headline": "AMD Is Behind The AI Chip Shift Nobody Is Talking About",
+      "summary": "An AI story worth watching.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/amd-behind-ai-chip-shift-144057045.html",
+      "category": "ai"
+    },
+    {
+      "outlet": "Yahoo Finance",
+      "headline": "Mortgage and refinance interest rates today, Monday, September 7, 2026: Fixed purchase rates lower than refi rates",
+      "summary": "An economic development worth tracking.",
+      "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-and-refinance-interest-rates-today-monday-september-7-2026-fixed-purchase-rates-lower-than-refi-rates-100000677.html",
+      "category": "economics"
+    },
+    {
+      "outlet": "MarketWatch",
+      "headline": "Why the launch of OpenAI’s latest Astra model reignited the memory chip trade",
+      "summary": "Since troughing on July 29, the semiconductor sector has been recovering steadily with the OpenAI ChatGPT-6 Astra release bolstering sentiment further",
+      "url": "https://www.marketwatch.com/story/why-the-launch-of-openais-latest-astra-model-reignited-the-memory-chip-trade-809e2edb?mod=mw_rss_topstories",
+      "category": "ai"
+    },
+    {
+      "outlet": "MarketWatch",
+      "headline": "Is the stock market open today for Labor Day? What about bond trading and mail delivery?",
+      "summary": "Here’s how trading hours and other services are affected by the Labor Day holiday on Monday, Sept. 7.",
+      "url": "https://www.marketwatch.com/story/is-the-stock-market-open-on-labor-day-does-the-post-office-deliver-mail-6d58fd77?mod=mw_rss_topstories",
+      "category": "markets"
     },
     {
       "outlet": "Deutsche Welle",
@@ -89,27 +117,6 @@
       "summary": "Germany's far-right AfD party has long claimed that the eastern state of Saxony-Anhalt has been left behind. Is that really the case? A closer look at the data offers some interesting insights.",
       "url": "https://www.dw.com/en/germany-is-saxony-anhalt-s-economy-really-struggling/a-78867143?maca=en-rss-en-bus-2091-rdf",
       "category": "economics"
-    },
-    {
-      "outlet": "Investing.com",
-      "headline": "Evercore ISI Names Top Pick, Lifts Target to $575 on AI Growth",
-      "summary": "An AI story worth watching.",
-      "url": "https://www.investing.com/news/stock-market-news/evercore-isi-names-top-pick-lifts-target-to-575-on-ai-growth-93CH-4890639",
-      "category": "ai"
-    },
-    {
-      "outlet": "Investing.com",
-      "headline": "Yen hits seven-month high; dollar soft ahead of US inflation",
-      "summary": "An economic development worth tracking.",
-      "url": "https://www.investing.com/news/economy-news/dollar-gets-little-lift-from-boost-in-fed-hike-expectations-4890340",
-      "category": "economics"
-    },
-    {
-      "outlet": "Investing.com",
-      "headline": "FINQ AIUP and AINT Explained: What Sits Behind Returns of 23.51% and 23.83% Versus the S&P 500’s 11.61%",
-      "summary": "A markets move worth a closer look.",
-      "url": "https://www.investing.com/news/company-news/finq-aiup-and-aint-explained-what-sits-behind-returns-of-2351-and-2383-versus-the-sp-500s-1161-4890638",
-      "category": "markets"
     },
     {
       "outlet": "IOL",
