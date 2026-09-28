@@ -4,13 +4,13 @@
   "pubDate": "2026-09-28",
   "weekStart": "2026-09-21",
   "weekEnd": "2026-09-27",
-  "description": "This week's roundup covers 14 headlines from BBC News, The Guardian, Investing.com, NPR, IOL.",
+  "description": "This week's roundup covers 14 headlines from BBC News, Deutsche Welle, MarketWatch, The Guardian, IOL.",
   "entries": [
     {
       "outlet": "BBC News",
-      "headline": "OpenAI bots meddled with multiple US government agency sites",
-      "summary": "OpenAI said its bots accessed public data from a range of institutions during test exercises.",
-      "url": "https://www.bbc.co.uk/news/articles/cw62jje658dlo?at_medium=RSS&at_campaign=rss",
+      "headline": "UK needs plan in case of 'unprecedented' AI job losses, says minister",
+      "summary": "Kanishka Narayan says one of his top priorities is to have a plan in place if job losses are as bad as some fear.",
+      "url": "https://www.bbc.co.uk/news/articles/cvj64jg5prpgo?at_medium=RSS&at_campaign=rss",
       "category": "ai"
     },
     {
@@ -22,9 +22,51 @@
     },
     {
       "outlet": "BBC News",
-      "headline": "Best thing we can offer young people is a job, not benefits, says chancellor",
-      "summary": "John Healey's speech comes ahead of next month's Budget, as he faces pressure to bring down government borrowing costs.",
-      "url": "https://www.bbc.co.uk/news/articles/c3x2zw18ge59o?at_medium=RSS&at_campaign=rss",
+      "headline": "UK tries to stop Trump's diesel export ban",
+      "summary": "John Healey said the government is in talks with the US over Donald Trump's threat to stop exports.",
+      "url": "https://www.bbc.co.uk/news/articles/cmx2z3vgy5xwo?at_medium=RSS&at_campaign=rss",
+      "category": "markets"
+    },
+    {
+      "outlet": "Deutsche Welle",
+      "headline": "Canada's Carney holds firm against Trump tariffs",
+      "summary": "Canada is facing new US import penalties after Prime Minister Mark Carney refused to match US tariffs on China. Other countries are watching as the Trump trade clash turns into a fight over economic sovereignty.",
+      "url": "https://www.dw.com/en/canada-s-carney-holds-firm-against-trump-tariffs/a-78542754?maca=en-rss-en-bus-2091-rdf",
+      "category": "tariffs"
+    },
+    {
+      "outlet": "Deutsche Welle",
+      "headline": "Why AI researchers warn humanity could face extinction",
+      "summary": "Could artificial intelligence pose an existential threat to humanity? Some leading researchers are warning against an unregulated race toward AI superintelligence.",
+      "url": "https://www.dw.com/en/why-ai-researchers-warn-humanity-could-face-extinction/a-79263146?maca=en-rss-en-bus-2091-rdf",
+      "category": "ai"
+    },
+    {
+      "outlet": "Deutsche Welle",
+      "headline": "Global Gender Gap Report: Women's hard-won gains 'fragile'",
+      "summary": "Two decades of progress toward gender parity is at risk as women's political representation declines, according to a new World Economic Forum report. At the current pace, the remaining gap could take 120 years to close.",
+      "url": "https://www.dw.com/en/global-gender-gap-report-women-s-hard-won-gains-fragile/a-79280086?maca=en-rss-en-bus-2091-rdf",
+      "category": "economics"
+    },
+    {
+      "outlet": "MarketWatch",
+      "headline": "From $6 eggs to $50,000 cars, these charts show how inflation has defined the past 5 years",
+      "summary": "Rising prices have been crushing consumer confidence and biting at Americans’ wallets for more than five years now.",
+      "url": "https://www.marketwatch.com/story/from-6-eggs-to-50-000-cars-these-charts-show-how-inflation-has-defined-the-past-5-years-3c7b9ab9?mod=mw_rss_topstories",
+      "category": "economics"
+    },
+    {
+      "outlet": "MarketWatch",
+      "headline": "MongoDB’s stock is down nearly 20% as CEO decamps to Meta",
+      "summary": "Meta is creating an enterprise platform business that aims to make it easier for developers to use its products. CJ Desai, formerly of MongoDB, will head up the initiative.",
+      "url": "https://www.marketwatch.com/story/mongodbs-stock-is-down-more-than-20-as-ceo-decamps-to-meta-ad66a942?mod=mw_rss_topstories",
+      "category": "markets"
+    },
+    {
+      "outlet": "MarketWatch",
+      "headline": "Nvidia is right: Its stock is a bargain by this measure",
+      "summary": "Nvidia’s stock has gotten cheaper even as the company has sustained robust levels of growth.",
+      "url": "https://www.marketwatch.com/story/nvidia-is-right-its-stock-is-a-bargain-95cee6ca?mod=mw_rss_topstories",
       "category": "markets"
     },
     {
@@ -43,65 +85,23 @@
     },
     {
       "outlet": "The Guardian",
-      "headline": "AI leaders have known about the extinction threat for decades | Judith Levine",
-      "summary": "Scientists and entrepreneurs knew the dangers of AI a quarter-century ago. But animated by curiosity and profit, they went ahead anyway Over the past few weeks, many of us have struggled to concoct a mental image of b...",
-      "url": "https://www.theguardian.com/commentisfree/2026/sep/28/ai-extinction-threats",
+      "headline": "Nvidia unveils security platform to rein in AI agents and $150bn stock buyback",
+      "summary": "Chipmaker says new system was designed to prevent AI agents from going rogue amid incidents at top companies Nvidia on Monday unveiled a new security platform that the chipmaker said can stop artificial intelligence a...",
+      "url": "https://www.theguardian.com/technology/2026/sep/28/nvidia-ai-agent-security-platform-stock-buyback",
       "category": "ai"
     },
     {
-      "outlet": "Investing.com",
-      "headline": "Nvidia releases AI safety software it says could have stopped Hugging Face hack",
-      "summary": "An AI story worth watching.",
-      "url": "https://www.investing.com/news/stock-market-news/nvidia-releases-aisafety-softwareit-says-could-have-stopped-hugging-face-hack-4919614",
-      "category": "ai"
-    },
-    {
-      "outlet": "Investing.com",
-      "headline": "FirstService Residential to manage 4,500-home Orlando community",
-      "summary": "A markets move worth a closer look.",
-      "url": "https://www.investing.com/news/company-news/firstservice-residential-to-manage-4500home-orlando-community-93CH-4920754",
-      "category": "markets"
-    },
-    {
-      "outlet": "Investing.com",
-      "headline": "Earnings call transcript: Addex Therapeutics falls on H1 2026 update and funding focus",
-      "summary": "A markets move worth a closer look.",
-      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-addex-therapeutics-falls-on-h1-2026-update-and-funding-focus-93CH-4920753",
-      "category": "markets"
-    },
-    {
-      "outlet": "NPR",
-      "headline": "Everyone is racing to create an AI device. Meta thinks it has one",
-      "summary": "Tech companies are betting that people will connect with AI using something other than smartphones. Meta is going all-in on glasses, after launching its new AI agent Muse.",
-      "url": "https://www.npr.org/2026/09/27/nx-s1-5980407/everyone-is-racing-to-create-an-ai-device-meta-thinks-it-has-one",
-      "category": "ai"
-    },
-    {
-      "outlet": "NPR",
-      "headline": "The economic squeeze is pushing up poverty rates for older adults",
-      "summary": "Despite lower poverty overall, the rate for seniors has been steadily rising in recent years. A new AARP survey sheds light on how those over 50 are struggling in the crucial time before retirement.",
-      "url": "https://www.npr.org/2026/09/24/nx-s1-5979857/senior-adult-poverty-affordability",
-      "category": "economics"
-    },
-    {
-      "outlet": "NPR",
-      "headline": "What we know about the suspected U.K. terror plot. And, why the Gulf remains in limbo",
-      "summary": "What we know — and still don't — about the suspected terror plot near a U.K. air base. Trump rejects Iran's offer to pause fighting. And CNN prepares for new owners with ties to Trump.",
-      "url": "https://www.npr.org/2026/09/28/g-s1-145248/up-first-newsletter-uk-us-air-base-iran-strait-hormuz-media-outlets-cnn-trump",
-      "category": "markets"
+      "outlet": "IOL",
+      "headline": "SA's 2.6-million housing backlog stalled by high land costs, budget cuts",
+      "summary": "Human Settlements Minister Thembi Simelane says limited availability and high cost of well-located land make it difficult for government to provide alternative housing models like social and affordable rental housing.",
+      "url": "https://iol.co.za/capetimes/news/2026-09-28-sas-26-million-housing-backlog-stalled-by-high-land-costs-budget-cuts/",
+      "category": "south-africa"
     },
     {
       "outlet": "IOL",
       "headline": "MAGA Is BEE in Reverse: The United States Has No Business Lecturing South Africa on Race and Economic Preference",
       "summary": "Shabodien Roomanay argues that Washington’s criticism of South Africa’s race-conscious economic policies is undermined by America’s own use of tariffs, industrial policy and “America First” economic nationalism.",
       "url": "https://iol.co.za/news/opinion/2026-09-28-maga-is-bee-in-reverse-the-united-states-has-no-business-lecturing-south-africa-on-race-and-economic-preference/",
-      "category": "south-africa"
-    },
-    {
-      "outlet": "IOL",
-      "headline": "ANALYSIS | INSIDE THE MKP WAR ROOM: Duduzane Zuma’s plan for Durban and why he won’t apologize for dynasty",
-      "summary": "From KPIs to firing non-performers, his relationship with big business and capital, to reclaiming hijacked buildings, MKP Deputy President reveals how the party wants to govern eThekwini.",
-      "url": "https://iol.co.za/opinion/2026-09-28-analysis-inside-the-mkp-war-room-duduzane-zumas-plan-for-durban-and-why-he-wont-apologize-for-dynasty/",
       "category": "south-africa"
     }
   ]
