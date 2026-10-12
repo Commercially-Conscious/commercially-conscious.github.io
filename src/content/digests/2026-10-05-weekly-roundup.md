@@ -4,7 +4,7 @@
   "pubDate": "2026-10-12",
   "weekStart": "2026-10-05",
   "weekEnd": "2026-10-11",
-  "description": "This week's roundup covers 14 headlines from BBC News, Al Jazeera, NPR, Deutsche Welle, IOL.",
+  "description": "This week's roundup covers 13 headlines from BBC News, Al Jazeera, MarketWatch, NPR, IOL, The Citizen.",
   "entries": [
     {
       "outlet": "BBC News",
@@ -29,24 +29,38 @@
     },
     {
       "outlet": "Al Jazeera",
-      "headline": "Confronting the ‘largest energy security threat’",
-      "summary": "The head of the International Energy Agency, Fatih Birol, discusses the challenges facing the global economy.",
-      "url": "https://www.aljazeera.com/video/talk-to-al-jazeera/2026/10/12/confronting-the-largest-energy-security?traffic_source=rss",
-      "category": "economics"
-    },
-    {
-      "outlet": "Al Jazeera",
-      "headline": "Israeli settlers abuse and reportedly poison goats in Palestinian village",
-      "summary": "An Israeli settler was filmed abusing and reportedly poisoning livestock in the village of Al-Mughayyir.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/12/israeli-settlers-abuse-and-reportedly-poison-goats-in-palestinian-village?traffic_source=rss",
+      "headline": "UK PM Andy Burnham met Man City chairman during time as Manchester mayor",
+      "summary": "Statement comes after criticism of Burnham's initial response ⁠to City being found guilty of serious financial breaches.",
+      "url": "https://www.aljazeera.com/sports/2026/10/12/uk-pm-andy-burnham-met-man-city-chairman-during-time-as-manchester-mayor?traffic_source=rss",
       "category": "global-trade"
     },
     {
       "outlet": "Al Jazeera",
-      "headline": "‘Energy ceasefire’: What’s behind Trump’s love-hate ties to Russian oil?",
-      "summary": "Trump's energy truce sparks criticism over aiding Russia's war finances amid diesel shortages and rising consumer costs.",
-      "url": "https://www.aljazeera.com/news/2026/10/12/energy-ceasefire-whats-behind-trumps-love-hate-ties-to-russian-oil?traffic_source=rss",
+      "headline": "UK PM Andy Burnham vows to renegotiate post-Brexit trade deal with EU",
+      "summary": "PM Burnham confirms talks in Brussels next month, insisting the British public will be 'the boss' of the reset.",
+      "url": "https://www.aljazeera.com/news/2026/10/12/uk-pm-andy-burnham-vows-to-renegotiate-post-brexit-trade-deal-with-eu?traffic_source=rss",
       "category": "global-trade"
+    },
+    {
+      "outlet": "MarketWatch",
+      "headline": "These stocks could be the future winners — and losers — of a massive shift in IT spending",
+      "summary": "As more money flows toward AI software offerings, Salesforce could deepen its customer relationships while Adobe looks vulnerable, analysts say.",
+      "url": "https://www.marketwatch.com/story/these-stocks-could-be-the-future-winners-and-losers-of-a-massive-shift-in-it-spending-bfc88c05?mod=mw_rss_topstories",
+      "category": "ai"
+    },
+    {
+      "outlet": "MarketWatch",
+      "headline": "Trump’s ‘energy ceasefire’ collides with real-world problems of dwindling fuel supplies",
+      "summary": "Oil markets were struggling on Monday to gauge how President Donald Trump’s new declaration of an “energy ceasefire” between Russia and Ukraine might help mitigate a deepening global oil crisis as the Middle East conf...",
+      "url": "https://www.marketwatch.com/story/trumps-energy-ceasefire-collides-with-real-world-problems-of-dwindling-fuel-supplies-8ba3993b?mod=mw_rss_topstories",
+      "category": "markets"
+    },
+    {
+      "outlet": "MarketWatch",
+      "headline": "‘The prospectus looks impressive’: My financial adviser wants me to invest $350,000 in a UAE data center. Is this risky?",
+      "summary": "“I’m in my 60s, recently retired and living my best life.”",
+      "url": "https://www.marketwatch.com/story/the-prospectus-looks-impressive-my-financial-adviser-wants-me-to-invest-350-000-in-a-uae-data-center-is-this-risky-d5d3747c?mod=mw_rss_topstories",
+      "category": "markets"
     },
     {
       "outlet": "NPR",
@@ -70,27 +84,6 @@
       "category": "markets"
     },
     {
-      "outlet": "Deutsche Welle",
-      "headline": "Global trade weathers Iran, Ukraine and Trump's tariffs",
-      "summary": "Over the past six years, COVID, two wars and Donald Trump's tariffs have shaken world trade. With globalization already stalling, is this a temporary shock or the start of a great reversal?",
-      "url": "https://www.dw.com/en/global-trade-weathers-iran-ukraine-and-trump-s-tariffs/a-79352643?maca=en-rss-en-bus-2091-rdf",
-      "category": "tariffs"
-    },
-    {
-      "outlet": "Deutsche Welle",
-      "headline": "Is US President Donald Trump right to rename AI as 'Super Intelligence'?",
-      "summary": "Donald Trump thinks the name artificial intelligence sounds \"fake\" and has ordered US agencies to use \"Super Intelligence\" instead. Yet, tech firms and researchers have little reason to play along.",
-      "url": "https://www.dw.com/en/is-us-president-donald-trump-right-to-rename-ai-as-super-intelligence/a-79430388?maca=en-rss-en-bus-2091-rdf",
-      "category": "ai"
-    },
-    {
-      "outlet": "Deutsche Welle",
-      "headline": "Euro plummets against US dollar: Has the next financial crisis begun?",
-      "summary": "The euro has fallen to a 17-month low against the dollar. That will make inflation worse in the EU, where political worries and concern over French debt are already troubling investors. Is a fiscal crisis at hand?",
-      "url": "https://www.dw.com/en/euro-plummets-against-us-dollar-has-the-next-financial-crisis-begun/a-79549031?maca=en-rss-en-bus-2091-rdf",
-      "category": "economics"
-    },
-    {
       "outlet": "IOL",
       "headline": "11 parties to debate Cape Town crime, housing and coalition plans",
       "summary": "Representatives of 11 political parties are expected at a closed-door Cape Town election discussion on crime, housing, coalition governance, economic growth and water security ahead of the 4 November 2026 local govern...",
@@ -98,10 +91,10 @@
       "category": "south-africa"
     },
     {
-      "outlet": "IOL",
-      "headline": "ANCYL warns of instability over B-BBEE and economic exclusion",
-      "summary": "The ANCYL has called on Minister Parks Tau to re-promulgate the Legal Sector Code within 90 days after the High Court set it aside.",
-      "url": "https://iol.co.za/news/politics/2026-10-12-ancyl-warns-of-instability-over-b-bbee-and-economic-exclusion/",
+      "outlet": "The Citizen",
+      "headline": "Eskom load reduction: These Gauteng areas face power cuts this week",
+      "summary": "The schedule lists different areas for morning interruptions from 5am to 9am and evening interruptions from 5pm to 10pm.",
+      "url": "https://www.citizen.co.za/news/south-africa/eskom-load-reduction-these-gauteng-areas-face-power-cuts-this-week/",
       "category": "south-africa"
     }
   ]
