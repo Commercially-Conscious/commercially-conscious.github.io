@@ -4,7 +4,7 @@
   "pubDate": "2026-10-19",
   "weekStart": "2026-10-12",
   "weekEnd": "2026-10-18",
-  "description": "This week's roundup covers 20 headlines from BBC News, Deutsche Welle, The Guardian, MarketWatch, NPR, Investing.com, IOL, The Citizen.",
+  "description": "This week's roundup covers 15 headlines from BBC News, Investing.com, NPR, Al Jazeera, Deutsche Welle, SABC News, IOL.",
   "entries": [
     {
       "outlet": "BBC News",
@@ -28,66 +28,24 @@
       "category": "economics"
     },
     {
-      "outlet": "Deutsche Welle",
-      "headline": "Global trade weathers Iran, Ukraine and Trump's tariffs",
-      "summary": "Over the past six years, COVID, two wars and Donald Trump's tariffs have shaken world trade. With globalization already stalling, is this a temporary shock or the start of a great reversal?",
-      "url": "https://www.dw.com/en/global-trade-weathers-iran-ukraine-and-trump-s-tariffs/a-79352643?maca=en-rss-en-bus-2091-rdf",
-      "category": "tariffs"
-    },
-    {
-      "outlet": "Deutsche Welle",
-      "headline": "EU promotes sovereign, trusted AI as it struggles to catch US and China",
-      "summary": "At an international AI summit in Dublin, EU leaders promoted trusted and independent artificial intelligence. Critics question whether the bloc can close the gap with the US and China while maintaining strict regulation.",
-      "url": "https://www.dw.com/en/eu-promotes-sovereign-trusted-ai-as-it-struggles-to-catch-us-and-china/a-79667770?maca=en-rss-en-bus-2091-rdf",
-      "category": "ai"
-    },
-    {
-      "outlet": "Deutsche Welle",
-      "headline": "Euro plummets against US dollar: Has the next financial crisis begun?",
-      "summary": "The euro has fallen to a 17-month low against the dollar. That will make inflation worse in the EU, where political worries and concern over French debt are already troubling investors. Is a fiscal crisis at hand?",
-      "url": "https://www.dw.com/en/euro-plummets-against-us-dollar-has-the-next-financial-crisis-begun/a-79549031?maca=en-rss-en-bus-2091-rdf",
-      "category": "economics"
-    },
-    {
-      "outlet": "The Guardian",
-      "headline": "Ellie Goulding admits error over promoting diamonds from controversial Australian mine",
-      "summary": "Singer ‘mortified’ about wearing diamonds from Argyle mine at centre of environmental concerns about Indigenous land The singer Ellie Goulding has admitted her error at having promoted diamonds at the centre of enviro...",
-      "url": "https://www.theguardian.com/music/2026/oct/19/ellie-goulding-diamonds-australia-argyle-mine",
-      "category": "mergers-and-acquisitions"
-    },
-    {
-      "outlet": "The Guardian",
-      "headline": "AI firm Anthropic to commit 5% of shares to fund for ‘public good’",
-      "summary": "The $48bn giveaway comes amid concerns about the tech and as the company prepares for a stock market listing Anthropic has said it will commit 5% of its shares to a fund for the “public good”, as the AI developer behi...",
-      "url": "https://www.theguardian.com/technology/2026/oct/19/ai-firm-anthropic-to-commit-shares-to-fund-for-public-good",
-      "category": "ai"
-    },
-    {
-      "outlet": "The Guardian",
-      "headline": "Violent street protests in France and Italy trigger stock and bond sell-off and send euro lower – as it happened",
-      "summary": "Roaring exports lift China’s economic growth Chris Beauchamp, chief market analyst at investing and trading platform IG, said: Investors worried about political flashpoints will be watching France nervously. Given the...",
-      "url": "https://www.theguardian.com/business/live/2026/oct/19/exports-lift-china-economic-growth-french-protests-pressure-euro-bonds-latest-business-live-updates",
-      "category": "economics"
-    },
-    {
-      "outlet": "MarketWatch",
-      "headline": "Stocks are heading for a high-stakes showdown, as strong earnings collide with rising borrowing costs",
-      "summary": "The idea that the AI trade has been mostly immune to rising bond yields isn’t quite right, one strategist notes.",
-      "url": "https://www.marketwatch.com/story/stocks-are-heading-for-a-high-stakes-showdown-as-strong-earnings-collide-with-rising-borrowing-costs-6f8ea5b8?mod=mw_rss_topstories",
-      "category": "ai"
-    },
-    {
-      "outlet": "MarketWatch",
-      "headline": "Micron and other chip stocks spring back to life after bruising selloff",
-      "summary": "It’s a key week for tech stocks as Nvidia gears up for a European conference and Meta prepares to report earnings.",
-      "url": "https://www.marketwatch.com/story/micron-and-other-chip-stocks-spring-back-to-life-after-bruising-selloff-16486541?mod=mw_rss_topstories",
+      "outlet": "Investing.com",
+      "headline": "Newline by Fifth Third enables Visa corporate cards in 40+ countries",
+      "summary": "A markets move worth a closer look.",
+      "url": "https://www.investing.com/news/company-news/newline-by-fifth-third-enables-visa-corporate-cards-in-40-countries-93CH-4958067",
       "category": "markets"
     },
     {
-      "outlet": "MarketWatch",
-      "headline": "Tech stocks stumbled. Now comes a crucial week for Wall Street.",
-      "summary": "A wave of corporate results that could help determine whether the stock-market rally has more room to run — or whether investors are growing wary of the companies that powered it.",
-      "url": "https://www.marketwatch.com/story/tech-stocks-stumbled-now-comes-a-crucial-week-for-wall-street-2a093abe?mod=mw_rss_topstories",
+      "outlet": "Investing.com",
+      "headline": "J.P. Morgan forecasts 7% return for 60/40 portfolios through 2041",
+      "summary": "A markets move worth a closer look.",
+      "url": "https://www.investing.com/news/company-news/jp-morgan-forecasts-7-return-for-6040-portfolios-through-2041-93CH-4958066",
+      "category": "markets"
+    },
+    {
+      "outlet": "Investing.com",
+      "headline": "U.K. stocks lower at close of trade; Investing.com United Kingdom 100 down 1.08%",
+      "summary": "A markets move worth a closer look.",
+      "url": "https://www.investing.com/news/stock-market-news/uk-stocks-lower-at-close-of-trade-investingcom-united-kingdom-100-down-108-4958065",
       "category": "markets"
     },
     {
@@ -112,38 +70,45 @@
       "category": "markets"
     },
     {
-      "outlet": "Investing.com",
-      "headline": "US homebuilder sentiment tumbles to near 14-1/2-year low in October",
-      "summary": "A markets move worth a closer look.",
-      "url": "https://www.investing.com/news/economic-indicators/us-homebuilder-sentiment-tumbles-to-near-1412year-low-in-october-4957879",
-      "category": "markets"
+      "outlet": "Al Jazeera",
+      "headline": "Pakistan suspends Iran border trade, amid violence on both sides",
+      "summary": "Islamabad cites security concerns, while Tehran points to technical issues as Pakistan mediates between Iran and the US.",
+      "url": "https://www.aljazeera.com/news/2026/10/19/pakistan-suspends-iran-border-trade-amid-violence-on-both-sides?traffic_source=rss",
+      "category": "global-trade"
     },
     {
-      "outlet": "Investing.com",
-      "headline": "Gauzy completes $7M financing to restart smart glass production",
-      "summary": "A markets move worth a closer look.",
-      "url": "https://www.investing.com/news/company-news/gauzy-completes-7m-financing-to-restart-smart-glass-production-93CH-4957877",
-      "category": "markets"
+      "outlet": "Deutsche Welle",
+      "headline": "Global trade weathers Iran, Ukraine and Trump's tariffs",
+      "summary": "Over the past six years, COVID, two wars and Donald Trump's tariffs have shaken world trade. With globalization already stalling, is this a temporary shock or the start of a great reversal?",
+      "url": "https://www.dw.com/en/global-trade-weathers-iran-ukraine-and-trump-s-tariffs/a-79352643?maca=en-rss-en-bus-2091-rdf",
+      "category": "tariffs"
     },
     {
-      "outlet": "Investing.com",
-      "headline": "Cboe launches extended trading hours for select equity options",
-      "summary": "A markets move worth a closer look.",
-      "url": "https://www.investing.com/news/company-news/cboe-launches-extended-trading-hours-for-select-equity-options-93CH-4957876",
-      "category": "markets"
+      "outlet": "Deutsche Welle",
+      "headline": "EU promotes sovereign, trusted AI as it struggles to catch US and China",
+      "summary": "At an international AI summit in Dublin, EU leaders promoted trusted and independent artificial intelligence. Critics question whether the bloc can close the gap with the US and China while maintaining strict regulation.",
+      "url": "https://www.dw.com/en/eu-promotes-sovereign-trusted-ai-as-it-struggles-to-catch-us-and-china/a-79667770?maca=en-rss-en-bus-2091-rdf",
+      "category": "ai"
     },
     {
-      "outlet": "IOL",
-      "headline": "Who pays when South Africa’s municipal accounts go unpaid?",
-      "summary": "Ratepayer groups and economists are calling for municipal debt data to be published by customer category, warning that weak collection and write-offs could increase pressure on compliant businesses and residents.",
-      "url": "https://iol.co.za/capetimes/news/2026-10-19-who-pays-when-south-africas-municipal-accounts-go-unpaid/",
+      "outlet": "Deutsche Welle",
+      "headline": "Euro plummets against US dollar: Has the next financial crisis begun?",
+      "summary": "The euro has fallen to a 17-month low against the dollar. That will make inflation worse in the EU, where political worries and concern over French debt are already troubling investors. Is a fiscal crisis at hand?",
+      "url": "https://www.dw.com/en/euro-plummets-against-us-dollar-has-the-next-financial-crisis-begun/a-79549031?maca=en-rss-en-bus-2091-rdf",
+      "category": "economics"
+    },
+    {
+      "outlet": "SABC News",
+      "headline": "State flags flight risk in Mogalakwena manager’s bail hearing",
+      "summary": "allegedly inflated four million rand tender by paying 24 million rand to pay the service provider",
+      "url": "https://www.sabcnews.com/sabcnews/state-flags-flight-risk-in-mogalakwena-managers-bail-hearing/",
       "category": "south-africa"
     },
     {
-      "outlet": "The Citizen",
-      "headline": "Elections: What the ANC, DA, EFF and MK promise on electricity as load reduction lingers",
-      "summary": "According to Eskom, its energy availability factor for the financial year to date reached 68.2%, the best level in six years.",
-      "url": "https://www.citizen.co.za/news/elections-what-the-anc-da-eff-and-mk-promise-on-electricity-as-load-reduction-lingers/",
+      "outlet": "IOL",
+      "headline": "Divorced woman loses bid to remain beneficiary of multi-million-rand trust she helped establish",
+      "summary": "A Western Cape High Court judge has ruled that a woman’s entitlement to a property trust ended when her marriage to one of its beneficiaries was dissolved.",
+      "url": "https://iol.co.za/news/crime-and-courts/2026-10-19-divorced-woman-loses-bid-to-remain-beneficiary-of-multi-million-rand-trust-she-helped-establish/",
       "category": "south-africa"
     }
   ]
