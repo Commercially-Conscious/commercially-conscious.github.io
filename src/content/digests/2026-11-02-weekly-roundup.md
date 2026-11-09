@@ -4,7 +4,7 @@
   "pubDate": "2026-11-09",
   "weekStart": "2026-11-02",
   "weekEnd": "2026-11-08",
-  "description": "This week's roundup covers 16 headlines from BBC News, NPR, Al Jazeera, The Guardian, Deutsche Welle, SABC News, IOL.",
+  "description": "This week's roundup covers 16 headlines from BBC News, MarketWatch, The Guardian, Al Jazeera, Deutsche Welle, IOL.",
   "entries": [
     {
       "outlet": "BBC News",
@@ -22,45 +22,31 @@
     },
     {
       "outlet": "BBC News",
-      "headline": "Civil servant who secretly held five jobs found guilty of fraud",
-      "summary": "Kashim Chowdhury had secretly held multiple public sector jobs on full-time salaries.",
-      "url": "https://www.bbc.co.uk/news/articles/cm70pgnx891do?at_medium=RSS&at_campaign=rss",
+      "headline": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
+      "summary": "The share price dropped wiped hundreds of billions of dollars from the value of Nvidia.",
+      "url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss",
       "category": "markets"
     },
     {
-      "outlet": "NPR",
-      "headline": "Democrats won big. Can they lower your grocery bill?",
-      "summary": "Affordability concerns were top of mind for voters heading into the midterms, as tariffs and the war in Iran drove up prices, including food costs. Now, Americans are expecting relief from Washington.",
-      "url": "https://www.npr.org/2026/11/09/nx-s1-6030830/democrats-grocery-bill-affordability",
-      "category": "tariffs"
+      "outlet": "MarketWatch",
+      "headline": "His, mine or ours? I’m 53 and not sure how to handle merging finances with my long-term partner.",
+      "summary": "The ‘split’ you discuss should be more about estate planning than contemplating a future divorce",
+      "url": "https://www.marketwatch.com/story/his-mine-or-ours-im-53-and-not-sure-how-to-handle-merging-finances-with-my-long-term-partner-4c34c914?mod=mw_rss_topstories",
+      "category": "mergers-and-acquisitions"
     },
     {
-      "outlet": "NPR",
-      "headline": "This was the week the AI trade cracked. So what's next?",
-      "summary": "Big losses by AI shares in stock markets after Democrats won the midterm elections have left investors shaken and wondering comes next.",
-      "url": "https://www.npr.org/2026/11/06/nx-s1-6032695/this-was-the-week-the-ai-trade-cracked-so-whats-next",
-      "category": "ai"
-    },
-    {
-      "outlet": "NPR",
-      "headline": "Hiring jumps: The economy added 165,000 jobs last month",
-      "summary": "The U.S. job market improved last month, according to a report from the Labor Department Friday. Employers added more jobs than forecasters had expected and the unemployment rate dipped to 4.1%.",
-      "url": "https://www.npr.org/2026/11/06/nx-s1-6030867/jobs-labor-market-economy-wages-inflation",
+      "outlet": "MarketWatch",
+      "headline": "Hot U.S. inflation hasn’t cooled off. Rising consumer prices to keep Fed rate hike on track.",
+      "summary": "Rising prices point to the Fed increasing borrowing costs before Christmas.",
+      "url": "https://www.marketwatch.com/story/hot-u-s-inflation-hasnt-cooled-off-rising-consumer-prices-to-keep-fed-rate-hike-on-track-926c44b0?mod=mw_rss_topstories",
       "category": "economics"
     },
     {
-      "outlet": "Al Jazeera",
-      "headline": "Los Angeles mayoral race points to growing sway of democratic socialists",
-      "summary": "Nithya Raman taps into frustration with economic and political status quo to become mayor of the second-largest US city.",
-      "url": "https://www.aljazeera.com/news/2026/11/9/los-angeles-mayoral-race-points-to-growing-sway-of-democratic-socialists?traffic_source=rss",
-      "category": "economics"
-    },
-    {
-      "outlet": "Al Jazeera",
-      "headline": "Paraguay raids ex-president’s home: Why a bank crash brought down Pena",
-      "summary": "Santiago Pena faces charges of financial crimes following Ueno Bank's collapse, impacting half of Paraguay's population.",
-      "url": "https://www.aljazeera.com/news/2026/11/9/paraguay-raids-ex-presidents-home-why-a-bank-crash-brought-down-pena?traffic_source=rss",
-      "category": "global-trade"
+      "outlet": "MarketWatch",
+      "headline": "Think the bond market is broken? History says a massive turnaround could be coming.",
+      "summary": "Bond investors would do well to remember that it’s often darkest before the dawn.",
+      "url": "https://www.marketwatch.com/story/think-the-bond-market-is-broken-history-says-a-massive-turnaround-could-be-coming-dfaae450?mod=mw_rss_topstories",
+      "category": "markets"
     },
     {
       "outlet": "The Guardian",
@@ -78,10 +64,24 @@
     },
     {
       "outlet": "The Guardian",
-      "headline": "EU sues IBM and two European firms over troubled entry/exit border system",
-      "summary": "Lawsuit filed last year against IBM, Atos and Leonardo after delays to delivery to troubled new system The EU has filed a lawsuit against IBM and two other companies involved in its troubled border-management system, ...",
-      "url": "https://www.theguardian.com/world/2026/nov/09/eu-lawsuit-ibm-atos-leonardo-entry-exit-border-system",
+      "headline": "Boeing to cut about 5% of its commercial plane workforce",
+      "summary": "Company will cut jobs through a mix of layoffs and attrition as it moderates the pace of ramping up jet production Boeing will cut about 5% of its commercial plane workforce as it moderates the pace of ramping up jet ...",
+      "url": "https://www.theguardian.com/business/2026/nov/09/boeing-to-cut-commercial-plane-workforce",
       "category": "markets"
+    },
+    {
+      "outlet": "Al Jazeera",
+      "headline": "Los Angeles mayoral race points to growing sway of democratic socialists",
+      "summary": "Nithya Raman taps into frustration with economic and political status quo to become mayor of the second-largest US city.",
+      "url": "https://www.aljazeera.com/news/2026/11/9/los-angeles-mayoral-race-points-to-growing-sway-of-democratic-socialists?traffic_source=rss",
+      "category": "economics"
+    },
+    {
+      "outlet": "Al Jazeera",
+      "headline": "France accuses Iran of cyberattack on supermarket fridges",
+      "summary": "Paris says a cyber unit linked to Iran's Revolutionary Guard was behind hack, which hit more than 1,000 stores.",
+      "url": "https://www.aljazeera.com/news/2026/11/9/france-accuses-iran-of-cyberattack-on-european-fridges?traffic_source=rss",
+      "category": "global-trade"
     },
     {
       "outlet": "Deutsche Welle",
@@ -105,17 +105,17 @@
       "category": "ai"
     },
     {
-      "outlet": "SABC News",
-      "headline": "One dead, two wounded in Mdantsane police shootout",
-      "summary": "The police were hot on the heals of the suspects after they allegedly robbed a business in Tshabo",
-      "url": "https://www.sabcnews.com/sabcnews/one-dead-two-wounded-in-mdantsane-police-shootout/",
-      "category": "south-africa"
-    },
-    {
       "outlet": "IOL",
       "headline": "Rand hovers near one-month high as weaker dollar and gold lift currency",
       "summary": "The rand hovered near a one-month high as a weaker dollar, firmer gold and cheaper oil offset a sell-off on Wall Street.",
       "url": "https://iol.co.za/business/economy/2026-11-09-rand-hovers-near-one-month-high-as-weaker-dollar-and-gold-lift-currency/",
+      "category": "south-africa"
+    },
+    {
+      "outlet": "IOL",
+      "headline": "The slow death of grievance politics",
+      "summary": "South Africa’s 2026 local election results suggest voters are increasingly demanding competent government, economic opportunity and functioning municipalities — not only promises rooted in historical grievance.",
+      "url": "https://iol.co.za/capeargus/opinion/2026-11-09-the-slow-death-of-grievance-politics/",
       "category": "south-africa"
     }
   ]
