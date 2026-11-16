@@ -4,11 +4,11 @@
   "pubDate": "2026-11-16",
   "weekStart": "2026-11-09",
   "weekEnd": "2026-11-15",
-  "description": "This week's roundup covers 17 headlines from BBC News, Investing.com, Al Jazeera, The Guardian, Deutsche Welle, IOL.",
+  "description": "This week's roundup covers 13 headlines from BBC News, Investing.com, Al Jazeera, MarketWatch, SABC News, IOL.",
   "entries": [
     {
       "outlet": "BBC News",
-      "headline": "Trump says he wouldn't mind seeing Huang return to Nvidia",
+      "headline": "Trump backs return of ex-Nvidia boss after 'Bring Jensen Back' campaign launched",
       "summary": "A number of tech figures want the board of the AI chip giant to give Jensen Huang his job back.",
       "url": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
       "category": "ai"
@@ -29,100 +29,72 @@
     },
     {
       "outlet": "Investing.com",
-      "headline": "Advantage Energy surges 23% on $2.53 billion Canadian Natural buyout deal",
+      "headline": "Italian banks get interest rate boon alongside M&A, fee boost",
       "summary": "A deal worth keeping an eye on.",
-      "url": "https://www.investing.com/news/stock-market-news/advantage-energy-surges-23-on-253-billion-canadian-natural-buyout-deal-5030516",
+      "url": "https://www.investing.com/news/economy-news/italian-banks-get-interest-rate-boon-alongside-ma-fee-boost-5030424",
       "category": "mergers-and-acquisitions"
     },
     {
       "outlet": "Investing.com",
-      "headline": "Jefferies reiterates Buy on AbCellera stock, $21 target on VMS therapy",
-      "summary": "A markets move worth a closer look.",
-      "url": "https://www.investing.com/news/analyst-ratings/jefferies-reiterates-buy-on-abcellera-stock-21-target-on-vms-therapy-93CH-5030524",
-      "category": "markets"
+      "headline": "Analysis-AI selloff has investors scrambling to measure their true exposure",
+      "summary": "An AI story worth watching.",
+      "url": "https://www.investing.com/news/stock-market-news/analysisai-selloff-has-investors-scrambling-to-measure-their-true-exposure-5028994",
+      "category": "ai"
     },
     {
       "outlet": "Investing.com",
-      "headline": "Weibo stock hits 52-week low at 6.09 USD",
+      "headline": "HBNB stock hits 52-week low at 4.15 USD",
       "summary": "A markets move worth a closer look.",
-      "url": "https://www.investing.com/news/company-news/weibo-stock-hits-52week-low-at-609-usd-93CH-5030522",
+      "url": "https://www.investing.com/news/company-news/hbnb-stock-hits-52week-low-at-415-usd-93CH-5030752",
       "category": "markets"
     },
     {
       "outlet": "Al Jazeera",
-      "headline": "British farmers hope UK-EU deal with revive post-Brexit trade",
-      "summary": "Al Jazeera’s Charlie Angela speaks to a farmer in Sussex, who hopes a proposed UK-EU deal will ease trade barriers.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/16/british-farmers-hope-uk-eu-deal-with-revive-post-brexit-trade?traffic_source=rss",
-      "category": "tariffs"
+      "headline": "British actor Robert Pattinson named as new James Bond",
+      "summary": "The actor called the studio's decision a 'dream come true'.",
+      "url": "https://www.aljazeera.com/news/2026/11/16/british-actor-robert-pattinson-named-as-new-james-bond?traffic_source=rss",
+      "category": "global-trade"
     },
     {
       "outlet": "Al Jazeera",
-      "headline": "Why Silicon Valley is backing Nvidia ex-CEO Jensen Huang after his ouster",
-      "summary": "Huang's peers, including Elon Musk, have praised his business acumen and potential risks to the US's AI goals.",
-      "url": "https://www.aljazeera.com/news/2026/11/16/why-silicon-valley-is-backing-nvidia-ex-ceo-jensen-huang-after-his-ouster?traffic_source=rss",
+      "headline": "Musk, Silicon Valley insiders urge Nvidia to restore Jensen Huang as CEO",
+      "summary": "Nvidia faces a potential 30 percent value loss in value without Jensen Huang, market analysts say, amid a stock downturn.",
+      "url": "https://www.aljazeera.com/economy/2026/11/16/silicon-valley-insiders-urge-nvidia-to-restore-jensen-huangs-ceo-role?traffic_source=rss",
+      "category": "global-trade"
+    },
+    {
+      "outlet": "MarketWatch",
+      "headline": "Micron, AMD and other AI stocks fall as the chip sector’s selloff intensifies",
+      "summary": "Investors are jittery about Nvidia’s upcoming earnings and whether the company will scale back its financing of the AI ecosystem.",
+      "url": "https://www.marketwatch.com/story/micron-amd-and-other-ai-stocks-fall-as-the-chip-sectors-selloff-intensifies-48e38bdf?mod=mw_rss_topstories",
       "category": "ai"
     },
     {
-      "outlet": "Al Jazeera",
-      "headline": "Lebanon’s second airport could provide economic and political benefits",
-      "summary": "The establishment of a second airport in Lebanon gives the war-devastated country more options for air travel.",
-      "url": "https://www.aljazeera.com/features/2026/11/16/lebanons-second-airport-could-provide-economic-and-political-benefits?traffic_source=rss",
-      "category": "economics"
+      "outlet": "MarketWatch",
+      "headline": "Nvidia’s stock extends declines following harsh words from the U.S. government",
+      "summary": "The Commerce Department announced a new rule aimed at restricting China’s remote access to advanced chips.",
+      "url": "https://www.marketwatch.com/story/nvidias-stock-extends-declines-following-harsh-words-from-the-u-s-government-d721188e?mod=mw_rss_topstories",
+      "category": "markets"
     },
     {
-      "outlet": "The Guardian",
-      "headline": "The Guardian view on Cop31: the green transition must not be derailed | Editorial",
-      "summary": "Renewed commitments to electrification and climate science are vital outcomes from the latest round of UN talks The Cop31 climate talks have acquired something their delegates scarcely expected: a little political bre...",
-      "url": "https://www.theguardian.com/commentisfree/2026/nov/15/the-guardian-view-on-cop31-the-green-transition-must-not-be-derailed",
-      "category": "mergers-and-acquisitions"
+      "outlet": "MarketWatch",
+      "headline": "Nvidia is gearing up for one of Wall Street’s most anticipated earnings calls in years",
+      "summary": "Jensen Huang’s sudden departure has made Tuesday’s earnings call “the most important in the company’s history.”",
+      "url": "https://www.marketwatch.com/story/nvidia-is-gearing-up-for-one-of-wall-streets-most-anticipated-earnings-calls-in-years-91855b1e?mod=mw_rss_topstories",
+      "category": "markets"
     },
     {
-      "outlet": "The Guardian",
-      "headline": "Bad jobs or benefits? Milburn should force employers to help the young | Richard Partington",
-      "summary": "Long-awaited final report will call for benefit cuts but lack of entry-level jobs is also driving the crisis ‘I’m scared about my future’: young people on the stress and desperation of jobseeking A generation is being...",
-      "url": "https://www.theguardian.com/business/2026/nov/15/firms-labour-youth-employment-push",
-      "category": "ai"
-    },
-    {
-      "outlet": "The Guardian",
-      "headline": "Burnham pledges early intervention and ‘benefits backstop’ to tackle youth jobs crisis",
-      "summary": "Prime minister promises ‘root-and-branch rethink’ of support for young people as Milburn report advises sweeping changes to some benefits Andy Burnham: The crisis facing Britain’s young people is politicians’ fault. T...",
-      "url": "https://www.theguardian.com/society/2026/nov/15/no-free-lunch-milburn-mcfadden-kuenssberg-uk-benefits-youth-unemployment-neet",
-      "category": "economics"
-    },
-    {
-      "outlet": "Deutsche Welle",
-      "headline": "What the Democrats' midterms win means for the US economy and Trump",
-      "summary": "From high oil prices and data centers to tariffs and mounting debt, economic concerns played a key role in the crushing defeat of President Donald Trump's Republicans. So can the Democrats now make a difference?",
-      "url": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716?maca=en-rss-en-bus-2091-rdf",
-      "category": "tariffs"
-    },
-    {
-      "outlet": "Deutsche Welle",
-      "headline": "Is the AI bubble bursting just as Anthropic goes public?",
-      "summary": "The sharp sell-off in tech stocks after the US midterms has cast doubt on Anthropic's looming IPO. Yet with hundreds of billions still being invested, some think the AI party is still in full swing.",
-      "url": "https://www.dw.com/en/is-the-ai-bubble-bursting-just-as-anthropic-goes-public/a-79896537?maca=en-rss-en-bus-2091-rdf",
-      "category": "ai"
-    },
-    {
-      "outlet": "Deutsche Welle",
-      "headline": "India increases growth forecast for fiscal year",
-      "summary": "India's Ministry of Finance has increased its growth forecasts for the current fiscal year. But it also warned about inflation, particularly for fuel and energy, amid continued instability in the Middle East.",
-      "url": "https://www.dw.com/en/india-increases-growth-forecast-for-fiscal-year/a-79798971?maca=en-rss-en-bus-2091-rdf",
-      "category": "economics"
+      "outlet": "SABC News",
+      "headline": "Ackerman scores maiden test century",
+      "summary": "A magnificent maiden century by Protea opener Marques Ackerman brought South Africa right back in contention on day 2 of the first cricket test against Bangladesh in Johannesburg. The visitors scored 400 runs in their...",
+      "url": "https://www.sabcnews.com/sabcnews/ackerman-scores-maiden-test-century/",
+      "category": "south-africa"
     },
     {
       "outlet": "IOL",
       "headline": "Black Friday warning: Credit purchases could cost South Africans 40% more",
       "summary": "The National Financial Ombud has urged shoppers to calculate the full cost of credit before buying on Black Friday, warning that instalments, fees and multiple Buy Now, Pay Later agreements can place pressure on alrea...",
       "url": "https://iol.co.za/mercury/news/2026-11-16-black-friday-warning-credit-purchases-could-cost-south-africans-40-more/",
-      "category": "south-africa"
-    },
-    {
-      "outlet": "IOL",
-      "headline": "Coca-Cola HBC secures JSE listing ahead of major African expansion",
-      "summary": "Coca-Cola HBC has secured JSE approval for a secondary listing ahead of its planned US$2.6 billion acquisition of Coca-Cola Beverages Africa, expanding its African footprint and access for South African investors.",
-      "url": "https://iol.co.za/business/2026-11-16-coca-cola-hbc-secures-jse-listing-ahead-of-major-african-expansion/",
       "category": "south-africa"
     }
   ]
