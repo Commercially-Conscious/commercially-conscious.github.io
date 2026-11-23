@@ -4,7 +4,7 @@
   "pubDate": "2026-11-23",
   "weekStart": "2026-11-16",
   "weekEnd": "2026-11-22",
-  "description": "This week's roundup covers 11 headlines from BBC News, Deutsche Welle, Investing.com, IOL.",
+  "description": "This week's roundup covers 14 headlines from BBC News, Deutsche Welle, Investing.com, The Guardian, IOL.",
   "entries": [
     {
       "outlet": "BBC News",
@@ -50,24 +50,45 @@
     },
     {
       "outlet": "Investing.com",
-      "headline": "Anthropic vs Nvidia: comparing two ways to invest in AI",
+      "headline": "Anthropic options post solid debut, trailing SpaceX record",
       "summary": "An AI story worth watching.",
-      "url": "https://www.investing.com/news/stock-market-news/anthropic-vs-nvidia-comparing-two-ways-to-invest-in-ai-93CH-5046229",
+      "url": "https://www.investing.com/news/stock-market-news/anthropic-options-debut-with-brisk-volume-5046078",
       "category": "ai"
     },
     {
       "outlet": "Investing.com",
-      "headline": "Brazil targets primary surplus of up to 2% of GDP by end of Lula’s next term",
-      "summary": "An economic development worth tracking.",
-      "url": "https://www.investing.com/news/economy-news/brazil-targets-primary-surplus-of-up-to-2-of-gdp-by-end-of-lulas-next-term-5046231",
-      "category": "economics"
+      "headline": "US to blacklist Megaspeed chip firm linked to Nvidia scandal, source says",
+      "summary": "A markets move worth a closer look.",
+      "url": "https://www.investing.com/news/stock-market-news/us-to-blacklist-megaspeed-chip-firm-linked-to-nvidia-scandal-source-says-5046337",
+      "category": "markets"
     },
     {
       "outlet": "Investing.com",
-      "headline": "CrowdStrike’s Zscaler deal sets up Palo Alto rivalry, R.F. Lafferty analyst says",
+      "headline": "Citadel Securities’ 2018 analogy for U.S. markets: what fits and what differs now",
       "summary": "A markets move worth a closer look.",
-      "url": "https://www.investing.com/news/stock-market-news/crowdstrikes-zscaler-deal-sets-up-palo-alto-rivalry-rf-lafferty-analyst-says-5046242",
+      "url": "https://www.investing.com/news/stock-market-news/citadels-2018-analogy-for-us-markets-what-fits-and-what-differs-in-2026-93CH-5046259",
       "category": "markets"
+    },
+    {
+      "outlet": "The Guardian",
+      "headline": "The Guardian view on Britain and Europe: Burnham’s reset cannot be the final destination | Editorial",
+      "summary": "It’s welcome news that Labour has reopened doors that the Conservatives slammed shut. But the fundamental dilemma over European integration remains Andy Burnham on Friday announced a long-awaited deal to ease some of ...",
+      "url": "https://www.theguardian.com/commentisfree/2026/nov/20/the-guardian-view-on-britain-and-europe-burnhams-reset-cannot-be-the-final-destination",
+      "category": "tariffs"
+    },
+    {
+      "outlet": "The Guardian",
+      "headline": "Wild stock market swings: will I lose money, and is there anything I can do?",
+      "summary": "Shares are volatile amid jitters over tech and AI – but think carefully before you decide to ditch investments too Business live – latest updates It has been a volatile time on global stock markets, with rapid rallies...",
+      "url": "https://www.theguardian.com/business/2026/nov/23/falling-markets-will-i-lose-money-shares-tech-ai-investments",
+      "category": "ai"
+    },
+    {
+      "outlet": "The Guardian",
+      "headline": "Nvidia shares surge more than 30% on Jensen Huang‘s return, adding $1tn to company value – business live",
+      "summary": "Donald Trump hails Huang as a ‘great patriot and national treasure’ after his surprise reinstatement as Nvidia’s CEO US reactions to Jensen Huang return – US politics live Jensen Huang reinstated as Nvidia CEO Timelin...",
+      "url": "https://www.theguardian.com/business/live/2026/nov/23/tech-sell-off-ai-stock-market-support-measures-deployed-south-korea-taiwan-china-ftse-nasdaq-latest-news-updates",
+      "category": "economics"
     },
     {
       "outlet": "IOL",
